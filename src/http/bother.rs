@@ -1,25 +1,7 @@
-mod http;
-mod model;
-
-use axum::{
-    Router,
-    http::{StatusCode, Uri},
-    response::IntoResponse,
-    routing::{get, post},
-};
+use axum::{http::StatusCode, response::IntoResponse};
 use serde_json::json;
-use tokio::net::TcpListener;
-
-use crate::http::health::health;
 
 use crate::model::bother::Bother;
-
-const PORT: &str = "8123";
-
-async fn fallback(uri: Uri) -> impl IntoResponse {
-    (StatusCode::NOT_FOUND, format!("No route for {uri}!!1"))
-}
-
 // TODO: use extenstion for with db
 async fn bother_blockito(axum::Json(bother): axum::Json<Bother>) -> impl IntoResponse {
     // TODO: expand on system prompt and figure out what data to train with and what model to use
@@ -28,7 +10,7 @@ async fn bother_blockito(axum::Json(bother): axum::Json<Bother>) -> impl IntoRes
         "content": "your name is blockito and you are neat"
     })];
     // get the conversation messages from the database
-    // TODO: chat history should be stored/addedadded
+    // TODO: chat history should be stored/added
     // TODO push in all historical
     let request = json!({
         "model": "PLACEHOLDER",
@@ -48,20 +30,4 @@ async fn bother_blockito(axum::Json(bother): axum::Json<Bother>) -> impl IntoRes
         .unwrap(); // TODO: no unwrap
     // TODO: parse the response and return something useful
     (StatusCode::OK, axum::Json(body))
-}
-
-#[tokio::main]
-async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    println!("Hello, world!!!!!!");
-
-    let llama_router = Router::new()
-        .route("/", get(health))
-        .route("/health", get(health))
-        .route("/bother", post(bother_blockito))
-        .fallback(fallback);
-
-    let listener = TcpListener::bind(format!("127.0.0.1:{PORT}")).await?;
-
-    axum::serve(listener, llama_router).await?;
-    Ok(())
 }
