@@ -3,7 +3,7 @@ use serde_json::json;
 
 use crate::model::bother::Bother;
 // TODO: use extenstion for with db
-async fn bother_blockito(axum::Json(bother): axum::Json<Bother>) -> impl IntoResponse {
+pub async fn bother_blockito(axum::Json(bother): axum::Json<Bother>) -> impl IntoResponse {
     // TODO: expand on system prompt and figure out what data to train with and what model to use
     let messages = vec![json!({
         "role": "system",

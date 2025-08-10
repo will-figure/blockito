@@ -7,47 +7,16 @@ use axum::{
     response::IntoResponse,
     routing::{get, post},
 };
-use serde_json::json;
 use tokio::net::TcpListener;
 
 use crate::http::health::health;
 
-use crate::model::bother::Bother;
+use crate::http::bother::bother_blockito;
 
 const PORT: &str = "8123";
 
 async fn fallback(uri: Uri) -> impl IntoResponse {
     (StatusCode::NOT_FOUND, format!("No route for {uri}!!1"))
-}
-
-// TODO: use extenstion for with db
-async fn bother_blockito(axum::Json(bother): axum::Json<Bother>) -> impl IntoResponse {
-    // TODO: expand on system prompt and figure out what data to train with and what model to use
-    let messages = vec![json!({
-        "role": "system",
-        "content": "your name is blockito and you are neat"
-    })];
-    // get the conversation messages from the database
-    // TODO: chat history should be stored/addedadded
-    // TODO push in all historical
-    let request = json!({
-        "model": "PLACEHOLDER",
-        "prompt": bother.message,
-        "messages": messages,
-    });
-
-    let client = reqwest::Client::new();
-    let body = client
-        .post("http://127.0.0.1:8012/chat/completions")
-        .json(&request)
-        .send()
-        .await
-        .unwrap()
-        .text()
-        .await
-        .unwrap(); // TODO: no unwrap
-    // TODO: parse the response and return something useful
-    (StatusCode::OK, axum::Json(body))
 }
 
 #[tokio::main]
