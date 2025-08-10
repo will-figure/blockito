@@ -5,6 +5,7 @@ use crate::model::{conversation::Conversation, message::Message};
 
 const DB_URL: &str = "sqlite://sqlite.db";
 
+#[derive(Debug, Clone)]
 pub struct Database {
     pub pool: SqlitePool,
 }
@@ -58,14 +59,12 @@ impl Database {
 
         Ok(Self { pool })
     }
-    pub async fn insert_message(
+    pub async fn add_message_to_conversation(
         self,
         sender_type: &str,
         conversation_id: &str,
         message: &str,
     ) -> Result<(), sqlx::Error> {
-        // should generate a UUID for id
-        // user_id: String,         // TODO: use uuid
         let id = Uuid::new_v4().to_string(); // TODO: can i not use to_string() here?
         sqlx::query(
             "INSERT INTO messages (id, sender_type, conversation_id, message) VALUES (?, ?, ?, ?)",
@@ -79,19 +78,23 @@ impl Database {
 
         Ok(())
     }
-    pub async fn insert_conversation(self, user_id: &str, title: &str) -> Result<(), sqlx::Error> {
+    pub async fn create_conversation(
+        &self,
+        user_id: &str,
+        title: &str,
+    ) -> Result<String, sqlx::Error> {
         let id = Uuid::new_v4().to_string(); // TODO: can i not use to_string() here?
         sqlx::query("INSERT INTO conversations (id, user_id, title) VALUES (?, ?, ?)")
-            .bind(id)
+            .bind(&id)
             .bind(user_id) // replace with actual user_id
             .bind(title) // replace with actual title
             .execute(&self.pool)
             .await?;
 
-        Ok(())
+        Ok(id)
     }
     pub async fn get_conversation_list_by_user(
-        self,
+        &self,
         user_id: &str,
     ) -> Result<Vec<Conversation>, sqlx::Error> {
         let result = sqlx::query_as::<_, Conversation>(
@@ -102,8 +105,8 @@ impl Database {
         .await?;
         Ok(result)
     }
-    pub async fn get_converstation_by_id(
-        self,
+    pub async fn get_conversation_by_id(
+        &self,
         conversation_id: &str,
     ) -> Result<Vec<Message>, sqlx::Error> {
         let result = sqlx::query_as::<_, Message>(
@@ -116,7 +119,7 @@ impl Database {
         Ok(result)
     }
 
-    pub async fn delete_conversation(self, conversation_id: &str) -> Result<(), sqlx::Error> {
+    pub async fn delete_conversation(&self, conversation_id: &str) -> Result<(), sqlx::Error> {
         sqlx::query("DELETE FROM conversations WHERE id = ?")
             .bind(conversation_id)
             .execute(&self.pool)

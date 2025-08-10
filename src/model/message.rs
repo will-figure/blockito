@@ -3,9 +3,9 @@ use sqlx::prelude::FromRow;
 
 #[derive(FromRow, Deserialize, Serialize, Debug, Clone)]
 pub struct Message {
-    id: String,
-    conversation_id: String,
-    created_at: String, // TODO: use chrono::DateTime
-    message: String,
-    sender_type: String,
+    pub id: String,
+    pub conversation_id: String,
+    pub created_at: String, // TODO: use chrono::DateTime
+    pub message: String,
+    pub sender_type: String,
 }

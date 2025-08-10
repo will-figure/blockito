@@ -25,6 +25,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("Hello, world!!!!!!");
     let state = Arc::new(Database::new().await?);
 
+    // TODO: better abstraction
+
     let llama_router = Router::new()
         .route("/", get(health))
         .route("/health", get(health))
