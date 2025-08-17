@@ -1,6 +1,8 @@
+mod consts;
 mod db;
 mod http;
 mod model;
+mod vector;
 
 use axum::{
     Extension, Router,
@@ -11,8 +13,10 @@ use axum::{
 use std::sync::Arc;
 use tokio::net::TcpListener;
 
+use crate::consts::{EMBEDDING_MODEL, LANGUAGE_MODEL, ROBOT_NAME};
 use crate::db::database::Database;
 use crate::http::{bother::bother_blockito, health::health};
+use crate::vector::embedding::Embedding;
 
 const PORT: &str = "8123";
 
@@ -22,19 +26,27 @@ async fn fallback(uri: Uri) -> impl IntoResponse {
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    println!("Hello, world!!!!!!");
     let state = Arc::new(Database::new().await?);
+    println!("Database initialized");
+    let embedding = Arc::new(Embedding::new().await?);
+    println!("embedding initialized");
 
-    // TODO: better abstraction
+    // this whole thing is basically preloading a vector database
+    // we'll eventually add some checks to see if we need to do it or not
 
     let llama_router = Router::new()
         .route("/", get(health))
         .route("/health", get(health))
         .route("/bother", post(bother_blockito))
         .fallback(fallback)
-        .layer(Extension(state));
+        .layer(Extension(state))
+        .layer(Extension(embedding));
 
     let listener = TcpListener::bind(format!("127.0.0.1:{PORT}")).await?;
+    println!("Using embedding model: {EMBEDDING_MODEL}");
+    println!("Using language model: {LANGUAGE_MODEL}");
+    println!("Robot name: {ROBOT_NAME}!");
+    println!("Port: {PORT}");
 
     axum::serve(listener, llama_router).await?;
     Ok(())
