@@ -1,7 +1,5 @@
 use serde::{Deserialize, Serialize};
-use sqlx::{
-    Sqlite, SqlitePool, migrate::MigrateDatabase, prelude::FromRow, sqlite::SqliteConnectOptions,
-};
+use sqlx::{Sqlite, SqlitePool, migrate::MigrateDatabase, prelude::FromRow};
 use uuid::Uuid;
 
 use crate::model::{conversation::Conversation, message::Message};
