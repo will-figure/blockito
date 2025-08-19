@@ -1,7 +1,7 @@
-use std::str::FromStr;
-
 use serde::{Deserialize, Serialize};
-use sqlx::{SqlitePool, prelude::FromRow, sqlite::SqliteConnectOptions};
+use sqlx::{
+    Sqlite, SqlitePool, migrate::MigrateDatabase, prelude::FromRow, sqlite::SqliteConnectOptions,
+};
 use uuid::Uuid;
 
 use crate::model::{conversation::Conversation, message::Message};
@@ -23,12 +23,17 @@ pub struct Emb {
 
 impl Database {
     pub async fn new() -> Result<Self, Box<dyn std::error::Error>> {
-        println!("Creating database {}", DB_URL);
-        let options = SqliteConnectOptions::from_str(DB_URL)?
-            .extension("sqlite-vec")
-            .create_if_missing(true);
+        if !Sqlite::database_exists(DB_URL).await.unwrap_or(false) {
+            println!("Creating database {}", DB_URL);
+            match Sqlite::create_database(DB_URL).await {
+                Ok(_) => println!("Create db success"),
+                Err(error) => panic!("error: {}", error),
+            }
+        } else {
+            println!("Database already exists");
+        }
 
-        let pool = SqlitePool::connect_with(options).await?;
+        let pool = SqlitePool::connect(DB_URL).await?;
 
         // probably want all this in a migrations file(s)
         // so based on this
