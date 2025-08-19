@@ -78,11 +78,11 @@ impl Embedding {
 
         let top_similarities = &similarities[..top_n];
 
-        let thing = top_similarities
+        let result = top_similarities
             .iter()
             .map(|(chunk, similarity)| (chunk.clone(), *similarity))
             .collect::<Vec<_>>();
 
-        Ok(thing)
+        Ok(result)
     }
 }
