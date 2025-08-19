@@ -12,15 +12,23 @@ pub struct Database {
 }
 
 #[derive(FromRow, Deserialize, Serialize, Debug, Clone)]
-pub struct Emb {
+pub struct StoredEmbedding {
     id: String,
     created_at: String,
     topic: String,
     embedding: String, // JSON string representation of the embedding
 }
 
+pub struct ParsedEmbedding {
+    id: String,
+    created_at: String,
+    topic: String,
+    embedding: Vec<(String, f64)>,
+}
+
+// TODO: error consistency (move to anyhow)
 impl Database {
-    pub async fn new() -> Result<Self, Box<dyn std::error::Error>> {
+    pub async fn new() -> anyhow::Result<Self> {
         if !Sqlite::database_exists(DB_URL).await.unwrap_or(false) {
             println!("Creating database {}", DB_URL);
             match Sqlite::create_database(DB_URL).await {
@@ -46,6 +54,7 @@ impl Database {
         //
         // when create message, insert into messages with conversation_id
         // this last one also applies to the robot
+        // TODO: actual migrations
         sqlx::query(
             "
             CREATE TABLE IF NOT EXISTS messages (
@@ -74,12 +83,13 @@ impl Database {
 
         Ok(Self { pool })
     }
+
     pub async fn add_message_to_conversation(
         self,
         sender_type: &str,
         conversation_id: &str,
         message: &str,
-    ) -> Result<(), sqlx::Error> {
+    ) -> anyhow::Result<()> {
         let id = Uuid::new_v4().to_string(); // TODO: can i not use to_string() here?
         sqlx::query(
             "INSERT INTO messages (id, sender_type, conversation_id, message) VALUES (?, ?, ?, ?)",
@@ -93,11 +103,7 @@ impl Database {
 
         Ok(())
     }
-    pub async fn create_conversation(
-        &self,
-        user_id: &str,
-        title: &str,
-    ) -> Result<String, sqlx::Error> {
+    pub async fn insert_conversation(&self, user_id: &str, title: &str) -> anyhow::Result<String> {
         let id = Uuid::new_v4().to_string(); // TODO: can i not use to_string() here?
         sqlx::query("INSERT INTO conversations (id, user_id, title) VALUES (?, ?, ?)")
             .bind(&id)
@@ -111,7 +117,7 @@ impl Database {
     pub async fn get_conversation_list_by_user(
         &self,
         user_id: &str,
-    ) -> Result<Vec<Conversation>, sqlx::Error> {
+    ) -> anyhow::Result<Vec<Conversation>> {
         let result = sqlx::query_as::<_, Conversation>(
             "SELECT * FROM conversations WHERE user_id = ? ORDER BY created_at DESC",
         )
@@ -123,7 +129,7 @@ impl Database {
     pub async fn get_conversation_by_id(
         &self,
         conversation_id: &str,
-    ) -> Result<Vec<Message>, sqlx::Error> {
+    ) -> anyhow::Result<Vec<Message>> {
         // TODO: this doesn't need to return an array
         let result = sqlx::query_as::<_, Message>(
             "SELECT * FROM messages WHERE conversation_id = ? ORDER BY created_at ASC",
@@ -135,18 +141,19 @@ impl Database {
         Ok(result)
     }
 
-    pub async fn delete_conversation(&self, conversation_id: &str) -> Result<(), sqlx::Error> {
+    pub async fn delete_conversation(&self, conversation_id: &str) -> anyhow::Result<()> {
         sqlx::query("DELETE FROM conversations WHERE id = ?")
             .bind(conversation_id)
             .execute(&self.pool)
             .await?;
         Ok(())
     }
-    pub async fn create_embedding(
+
+    pub async fn insert_embedding(
         &self,
         topic: String,
         embedding: Vec<(String, f64)>,
-    ) -> Result<(), sqlx::Error> {
+    ) -> anyhow::Result<()> {
         let uuid = Uuid::new_v4().to_string();
 
         let embedding =
@@ -161,27 +168,29 @@ impl Database {
         Ok(())
     }
 
-    pub async fn get_embedding_by_topic(
-        &self,
-        topic: &str,
-    ) -> Result<Option<Vec<(String, f64)>>, Box<dyn std::error::Error>> {
-        let result = sqlx::query_as::<_, Emb>("SELECT embedding FROM embeddings WHERE topic = ?")
-            .bind(topic)
-            .fetch_one(&self.pool)
+    pub async fn delete_embedding(&self, id: &str) -> anyhow::Result<()> {
+        sqlx::query("DELETE FROM embeddings WHERE id = ?")
+            .bind(id)
+            .execute(&self.pool)
             .await?;
-        let thing: Vec<(String, f64)> = serde_json::from_str(&result.embedding)?;
-        Ok(Some(thing))
+        Ok(())
     }
 
-    pub async fn get_embedding_by_id(
-        &self,
-        id: &str,
-    ) -> Result<Option<Vec<(String, f64)>>, Box<dyn std::error::Error>> {
-        let result = sqlx::query_as::<_, Emb>("SELECT embedding FROM embeddings WHERE id = ?")
-            .bind(id)
-            .fetch_one(&self.pool)
-            .await?;
-        let thing: Vec<(String, f64)> = serde_json::from_str(&result.embedding)?;
-        Ok(Some(thing))
+    pub async fn get_embedding_by_id(&self, id: &str) -> anyhow::Result<Option<ParsedEmbedding>> {
+        let result =
+            sqlx::query_as::<_, StoredEmbedding>("SELECT embedding FROM embeddings WHERE id = ?")
+                .bind(id)
+                .fetch_one(&self.pool)
+                .await?;
+        let embedding: Vec<(String, f64)> = serde_json::from_str(&result.embedding)?;
+
+        let parsed_embedding = ParsedEmbedding {
+            id: result.id,
+            created_at: result.created_at,
+            topic: result.topic,
+            embedding,
+        };
+
+        Ok(Some(parsed_embedding))
     }
 }

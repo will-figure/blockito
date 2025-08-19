@@ -22,7 +22,7 @@ pub struct Embedding {
 
 // TODO: real erorr handling
 impl Embedding {
-    pub async fn new() -> Result<Self, Box<dyn std::error::Error>> {
+    pub async fn new() -> anyhow::Result<Self> {
         let mut vector_db = vec![];
         let file = fs::read_to_string("cat-facts.txt")
             .expect("something bad happened while loading the data");
@@ -37,7 +37,7 @@ impl Embedding {
         );
         Ok(Embedding { vector_db })
     }
-    async fn embedding(line: &str) -> Result<Vec<f64>, Box<dyn std::error::Error>> {
+    async fn embedding(line: &str) -> anyhow::Result<Vec<f64>> {
         // TODO: consider reusing the client
         let client = reqwest::Client::new();
         let request = json!({
@@ -65,7 +65,7 @@ impl Embedding {
         &self,
         query: &str,
         top_n: Option<usize>,
-    ) -> Result<Vec<(String, f64)>, Box<dyn std::error::Error>> {
+    ) -> anyhow::Result<Vec<(String, f64)>> {
         let query_embedding = Self::embedding(query).await?;
         let mut similarities = Vec::new();
 

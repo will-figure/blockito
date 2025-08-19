@@ -25,7 +25,7 @@ async fn fallback(uri: Uri) -> impl IntoResponse {
 }
 
 #[tokio::main]
-async fn main() -> Result<(), Box<dyn std::error::Error>> {
+async fn main() -> anyhow::Result<()> {
     let state = Arc::new(Database::new().await?);
     println!("Database initialized");
     let embedding = Arc::new(Embedding::new().await?);

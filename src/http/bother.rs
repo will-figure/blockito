@@ -64,7 +64,7 @@ pub async fn bother_blockito(
 
     let conversation_id = if bother.conversation_id.is_none() {
         // TODO: remove unwrap
-        db.create_conversation(&bother.user_id, "temp title, we'll figure this out later")
+        db.insert_conversation(&bother.user_id, "temp title, we'll figure this out later")
             .await
             .unwrap()
     } else {
