@@ -88,7 +88,6 @@ pub async fn bother_blockito(
             "content": message.message
         }));
     }
-    println!("Messages: {:?}", messages);
 
     // TODO: sort out db work
     // db.add_message_to_conversation(USER);
@@ -114,7 +113,7 @@ pub async fn bother_blockito(
         .await
         .unwrap(); // TODO: no unwrap
     let parsed_body: RobotResponses = serde_json::from_str(&body).unwrap(); // TODO: no unwrap
-    println!("Parsed response: {:?}", parsed_body);
+    // println!("Parsed response: {:?}", parsed_body);
     // TODO: consider combining if more than one choice
     let message = parsed_body.choices[0].message.content.clone();
     // TODO: add the response message to the conversation list (in the db)

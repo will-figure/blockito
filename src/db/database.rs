@@ -1,4 +1,7 @@
-use sqlx::{Sqlite, SqlitePool, migrate::MigrateDatabase};
+use std::str::FromStr;
+
+use serde::{Deserialize, Serialize};
+use sqlx::{SqlitePool, prelude::FromRow, sqlite::SqliteConnectOptions};
 use uuid::Uuid;
 
 use crate::model::{conversation::Conversation, message::Message};
@@ -10,19 +13,22 @@ pub struct Database {
     pub pool: SqlitePool,
 }
 
+#[derive(FromRow, Deserialize, Serialize, Debug, Clone)]
+pub struct Emb {
+    id: String,
+    created_at: String,
+    topic: String,
+    embedding: String, // JSON string representation of the embedding
+}
+
 impl Database {
     pub async fn new() -> Result<Self, Box<dyn std::error::Error>> {
-        if !Sqlite::database_exists(DB_URL).await.unwrap_or(false) {
-            println!("Creating database {}", DB_URL);
-            match Sqlite::create_database(DB_URL).await {
-                Ok(_) => println!("Create db success"),
-                Err(error) => panic!("error: {}", error),
-            }
-        } else {
-            println!("Database already exists");
-        }
+        println!("Creating database {}", DB_URL);
+        let options = SqliteConnectOptions::from_str(DB_URL)?
+            .extension("sqlite-vec")
+            .create_if_missing(true);
 
-        let pool = SqlitePool::connect(DB_URL).await?;
+        let pool = SqlitePool::connect_with(options).await?;
 
         // probably want all this in a migrations file(s)
         // so based on this
@@ -52,7 +58,13 @@ impl Database {
                 user_id TEXT NOT NULL,
                 title TEXT NOT NULL
             );
-",
+            CREATE TABLE IF NOT EXISTS embeddings (
+                id TEXT NOT NULL,
+                created_at TEXT NOT NULL DEFAULT current_timestamp,
+                topic TEXT NOT NULL,
+                embedding TEXT NOT NULL
+            );
+            ",
         )
         .execute(&pool)
         .await?;
@@ -109,6 +121,7 @@ impl Database {
         &self,
         conversation_id: &str,
     ) -> Result<Vec<Message>, sqlx::Error> {
+        // TODO: this doesn't need to return an array
         let result = sqlx::query_as::<_, Message>(
             "SELECT * FROM messages WHERE conversation_id = ? ORDER BY created_at ASC",
         )
@@ -125,5 +138,47 @@ impl Database {
             .execute(&self.pool)
             .await?;
         Ok(())
+    }
+    pub async fn create_embedding(
+        &self,
+        topic: String,
+        embedding: Vec<(String, f64)>,
+    ) -> Result<(), sqlx::Error> {
+        let uuid = Uuid::new_v4().to_string();
+
+        let embedding =
+            serde_json::to_string(&embedding).map_err(|e| sqlx::Error::Decode(Box::new(e)))?; // Convert embedding to JSON string
+
+        sqlx::query("INSERT INTO embeddings (id, topic, embedding) VALUES (?, ?, ?)")
+            .bind(uuid)
+            .bind(topic)
+            .bind(embedding)
+            .execute(&self.pool)
+            .await?;
+        Ok(())
+    }
+
+    pub async fn get_embedding_by_topic(
+        &self,
+        topic: &str,
+    ) -> Result<Option<Vec<(String, f64)>>, Box<dyn std::error::Error>> {
+        let result = sqlx::query_as::<_, Emb>("SELECT embedding FROM embeddings WHERE topic = ?")
+            .bind(topic)
+            .fetch_one(&self.pool)
+            .await?;
+        let thing: Vec<(String, f64)> = serde_json::from_str(&result.embedding)?;
+        Ok(Some(thing))
+    }
+
+    pub async fn get_embedding_by_id(
+        &self,
+        id: &str,
+    ) -> Result<Option<Vec<(String, f64)>>, Box<dyn std::error::Error>> {
+        let result = sqlx::query_as::<_, Emb>("SELECT embedding FROM embeddings WHERE id = ?")
+            .bind(id)
+            .fetch_one(&self.pool)
+            .await?;
+        let thing: Vec<(String, f64)> = serde_json::from_str(&result.embedding)?;
+        Ok(Some(thing))
     }
 }
