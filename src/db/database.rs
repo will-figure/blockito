@@ -85,7 +85,7 @@ impl Database {
     }
 
     pub async fn add_message_to_conversation(
-        self,
+        &self,
         sender_type: &str,
         conversation_id: &str,
         message: &str,

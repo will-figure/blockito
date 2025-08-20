@@ -27,21 +27,37 @@ struct RobotResponses {
     choices: Vec<RobotChoice>,
 }
 
+// TOOD: move this somewhere else
+pub struct AppError(anyhow::Error);
+
+impl IntoResponse for AppError {
+    fn into_response(self) -> axum::response::Response {
+        let error_message = format!("Internal Server Error: {}", self.0);
+        (StatusCode::INTERNAL_SERVER_ERROR, error_message).into_response()
+    }
+}
+
+impl<E> From<E> for AppError
+where
+    E: Into<anyhow::Error>,
+{
+    fn from(err: E) -> Self {
+        Self(err.into())
+    }
+}
+
 pub async fn bother_blockito(
     axum::Extension(db): axum::Extension<Arc<Database>>,
     axum::Extension(embedding): axum::Extension<Arc<Embedding>>,
     axum::Json(bother): axum::Json<Bother>,
-) -> impl IntoResponse {
+) -> Result<impl IntoResponse, AppError> {
     println!("Bother received {:?}", bother.message);
     // basically, hit the embedding model
     // use that to send to the language model
     // everything else should work as expected
     // (it won't but we can pretent for now)
 
-    let retrieved_knowledge = embedding
-        .retrieve(bother.message.as_str(), None)
-        .await
-        .unwrap(); // TODO remove unwrap, probably have this use result
+    let retrieved_knowledge = embedding.retrieve(bother.message.as_str(), None).await?;
 
     for (chunk, similarity) in &retrieved_knowledge {
         println!("Found chunk: {chunk} with similarity: {similarity}");
@@ -52,9 +68,11 @@ pub async fn bother_blockito(
         .map(|(chunk, _)| format!(" - {}", chunk))
         .collect::<Vec<_>>()
         .join("\n");
+
     let instruction_prompt = format!(
-        "You are a helpful chatbot named {ROBOT_NAME}.\nUse only the following pieces of context to answer the question. Don't make up any new information:\n{context} /no_think",
+        "You are a helpful chatbot named {ROBOT_NAME}.\nUse only the following pieces of context to answer the question. Do not reponsed with nothing. Don't make up any new information:\n{context} /no_think",
     );
+
     println!("Instruction prompt: {}", instruction_prompt);
 
     // if no conversation_id, create a new conversation
@@ -63,15 +81,14 @@ pub async fn bother_blockito(
     // return as expected
 
     let conversation_id = if bother.conversation_id.is_none() {
-        // TODO: remove unwrap
         db.insert_conversation(&bother.user_id, "temp title, we'll figure this out later")
-            .await
-            .unwrap()
+            .await?
     } else {
+        // can unwrap here because we check above
         bother.conversation_id.unwrap()
     };
     println!("Conversation ID: {}", conversation_id);
-    let conversation = db.get_conversation_by_id(&conversation_id).await.unwrap(); // TODO: remove unwrap
+    let conversation = db.get_conversation_by_id(&conversation_id).await?;
     println!("Conversation: {:?}", conversation);
 
     // I actually think this is wrong...
@@ -89,8 +106,8 @@ pub async fn bother_blockito(
         }));
     }
 
-    // TODO: sort out db work
-    // db.add_message_to_conversation(USER);
+    db.add_message_to_conversation(USER, &conversation_id, &bother.message)
+        .await?;
 
     // get the conversation messages from the database
     // TODO: chat history should be stored/added
@@ -98,7 +115,6 @@ pub async fn bother_blockito(
 
     let request = json!({
         "model": LANGUAGE_MODEL,
-        // "prompt": bother.message,
         "messages": messages,
     });
 
@@ -107,23 +123,21 @@ pub async fn bother_blockito(
         .post("http://127.0.0.1:8765/v1/chat/completions")
         .json(&request)
         .send()
-        .await
-        .unwrap()
+        .await?
         .text()
-        .await
-        .unwrap(); // TODO: no unwrap
-    let parsed_body: RobotResponses = serde_json::from_str(&body).unwrap(); // TODO: no unwrap
-    // println!("Parsed response: {:?}", parsed_body);
+        .await?;
+    let parsed_body: RobotResponses = serde_json::from_str(&body)?;
     // TODO: consider combining if more than one choice
     let message = parsed_body.choices[0].message.content.clone();
-    // TODO: add the response message to the conversation list (in the db)
-    // TODO: parse the response and return something useful
+    db.add_message_to_conversation(ASSISTANT, &conversation_id, &message)
+        .await?;
+
     // TODO: look into streaming
     // TODO: something something full chat response
-    (
+    Ok((
         StatusCode::OK,
         axum::Json(json!({
             "message": message
         })),
-    )
+    ))
 }
