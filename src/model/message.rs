@@ -2,6 +2,7 @@ use serde::{Deserialize, Serialize};
 use sqlx::prelude::FromRow;
 
 #[derive(FromRow, Deserialize, Serialize, Debug, Clone)]
+#[serde(rename_all = "camelCase")]
 pub struct Message {
     pub id: String,
     pub conversation_id: String,
