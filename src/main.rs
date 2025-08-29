@@ -24,6 +24,8 @@ async fn fallback(uri: Uri) -> impl IntoResponse {
     (StatusCode::NOT_FOUND, format!("No route for {uri}!!1"))
 }
 
+// TODO: better logging
+// TODO: maybe create an encapsulated llama client that handles the language model requests
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
     let state = Arc::new(Database::new().await?);

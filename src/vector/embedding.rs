@@ -3,7 +3,7 @@ use serde::Deserialize;
 use serde_json::json;
 use std::fs;
 
-use crate::consts::EMBEDDING_MODEL;
+use crate::consts::{EMBEDDING_MODEL, LLAMA_URL};
 
 #[derive(Deserialize, Debug)]
 struct EmbeddingsResponseData {
@@ -45,7 +45,7 @@ impl Embedding {
             "model": EMBEDDING_MODEL,
         });
         let embedding_result = client
-            .post("http://localhost:8765/v1/embeddings") // replace with actual embedding model URL
+            .post(format!("{LLAMA_URL}/v1/embeddings")) // replace with actual embedding model URL
             .json(&request)
             .send()
             .await?

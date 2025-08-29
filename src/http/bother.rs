@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 use serde_json::json;
 use std::sync::Arc;
 
-use crate::consts::{ASSISTANT, LANGUAGE_MODEL, ROBOT_NAME, SYSTEM, USER};
+use crate::consts::{ASSISTANT, LANGUAGE_MODEL, LLAMA_URL, ROBOT_NAME, SYSTEM, USER};
 use crate::db::database::Database;
 use crate::model::bother::Bother;
 use crate::vector::embedding::Embedding;
@@ -99,20 +99,23 @@ pub async fn bother_blockito(
         "content": instruction_prompt,
     })];
 
-    for message in conversation {
-        messages.push(json!({
-            "role": message.sender_type,
-            "content": message.message
-        }));
-    }
+    // for message in conversation {
+    //     messages.push(json!({
+    //         "role": message.sender_type,
+    //         "content": message.message
+    //     }));
+    // }
 
     db.add_message_to_conversation(USER, &conversation_id, &bother.message)
         .await?;
+    messages.push(json!({
+        "role": USER,
+        "content": bother.message
+    }));
 
     // get the conversation messages from the database
     // TODO: chat history should be stored/added
-    // TODO: push in all historical
-
+    // TODO: push in all historical, might not be great... at least not with with small model
     let request = json!({
         "model": LANGUAGE_MODEL,
         "messages": messages,
@@ -120,7 +123,7 @@ pub async fn bother_blockito(
 
     let client = reqwest::Client::new();
     let body = client
-        .post("http://127.0.0.1:8765/v1/chat/completions")
+        .post(format!("{LLAMA_URL}/v1/chat/completions"))
         .json(&request)
         .send()
         .await?
