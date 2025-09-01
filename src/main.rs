@@ -43,6 +43,7 @@ async fn main() -> anyhow::Result<()> {
         .route("/health", get(health))
         .route("/bother", post(bother_blockito))
         .route("/conversations/{user_id}", get(conversations))
+        // GET /conversation/{conversation_id}
         .fallback(fallback)
         .layer(Extension(state))
         .layer(Extension(embedding));

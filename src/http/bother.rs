@@ -72,7 +72,8 @@ pub async fn bother_blockito(
         bother.conversation_id.unwrap()
     };
     println!("Conversation ID: {}", conversation_id);
-    let conversation = db.get_conversation_by_id(&conversation_id).await?;
+    // TODO: should this return the message or the whole conversation up to this point?
+    // let conversation = db.get_conversation_by_id(&conversation_id).await?;
     // println!("Conversation: {:?}", conversation);
 
     // I actually think this is wrong...

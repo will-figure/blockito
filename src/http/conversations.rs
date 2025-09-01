@@ -13,10 +13,8 @@ pub async fn conversations(
 ) -> Result<impl IntoResponse, AppError> {
     // to string seems wrong here...
     let user_id = user_id.to_string();
-    let things = db.get_conversation_list_by_user(user_id.as_str()).await?;
+    let conversations = db.get_conversation_list_by_user(user_id.as_str()).await?;
     println!("Get conversations for user_id: {}", user_id);
-    println!("conversations: {:?}", things);
-    let conversations: Vec<Uuid> = vec![];
     Ok((
         StatusCode::OK,
         axum::Json(json!({

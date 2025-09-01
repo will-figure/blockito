@@ -26,6 +26,13 @@ pub struct ParsedEmbedding {
     embedding: Vec<(String, f64)>,
 }
 
+// we don't need to send the actual embedding back
+pub struct EmbeddingMetadata {
+    pub id: String,
+    pub created_at: String,
+    pub topic: String,
+}
+
 // TODO: error consistency (move to anyhow)
 impl Database {
     pub async fn new() -> anyhow::Result<Self> {
@@ -151,6 +158,7 @@ impl Database {
         Ok(())
     }
 
+    // eventually behind some permissions
     pub async fn insert_embedding(
         &self,
         topic: String,
@@ -170,6 +178,7 @@ impl Database {
         Ok(())
     }
 
+    // eventually behind some permissions
     pub async fn delete_embedding(&self, id: &str) -> anyhow::Result<()> {
         sqlx::query("DELETE FROM embeddings WHERE id = ?")
             .bind(id)
@@ -194,5 +203,23 @@ impl Database {
         };
 
         Ok(Some(parsed_embedding))
+    }
+
+    // going to need to figure out the best way to pair this to a conversation...
+    pub async fn get_all_embeddings(&self) -> anyhow::Result<Vec<EmbeddingMetadata>> {
+        let results = sqlx::query_as::<_, StoredEmbedding>("SELECT * FROM embeddings")
+            .fetch_all(&self.pool)
+            .await?;
+
+        let mut parsed_embeddings = Vec::new();
+        for result in results {
+            parsed_embeddings.push(EmbeddingMetadata {
+                id: result.id,
+                created_at: result.created_at,
+                topic: result.topic,
+            });
+        }
+
+        Ok(parsed_embeddings)
     }
 }

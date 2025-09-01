@@ -17,10 +17,10 @@ struct EmbeddingsResponse {
 
 #[derive(Debug, Clone)]
 pub struct Embedding {
+    // would it make sense to just store the reqwest client here?
     vector_db: Vec<(String, Vec<f64>)>, // not sure if string is correct yet
 }
 
-// TODO: real erorr handling
 impl Embedding {
     pub async fn new() -> anyhow::Result<Self> {
         let mut vector_db = vec![];
