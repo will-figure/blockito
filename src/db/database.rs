@@ -105,6 +105,7 @@ impl Database {
     }
     pub async fn insert_conversation(&self, user_id: &str, title: &str) -> anyhow::Result<String> {
         let id = Uuid::new_v4().to_string(); // TODO: can i not use to_string() here?
+        println!("Inserting conversation with id: {id} and user_id: {user_id}");
         sqlx::query("INSERT INTO conversations (id, user_id, title) VALUES (?, ?, ?)")
             .bind(&id)
             .bind(user_id) // replace with actual user_id
@@ -124,6 +125,7 @@ impl Database {
         .bind(user_id)
         .fetch_all(&self.pool)
         .await?;
+
         Ok(result)
     }
     pub async fn get_conversation_by_id(

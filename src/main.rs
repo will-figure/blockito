@@ -15,7 +15,7 @@ use tokio::net::TcpListener;
 
 use crate::consts::{EMBEDDING_MODEL, LANGUAGE_MODEL, ROBOT_NAME};
 use crate::db::database::Database;
-use crate::http::{bother::bother_blockito, health::health};
+use crate::http::{bother::bother_blockito, conversations::conversations, health::health};
 use crate::vector::embedding::Embedding;
 
 const PORT: &str = "8123";
@@ -36,10 +36,13 @@ async fn main() -> anyhow::Result<()> {
     // this whole thing is basically preloading a vector database
     // we'll eventually add some checks to see if we need to do it or not
 
+    // get conversations (per user)
+    // get conversation state (per conversation id)
     let llama_router = Router::new()
         .route("/", get(health))
         .route("/health", get(health))
         .route("/bother", post(bother_blockito))
+        .route("/conversations/{user_id}", get(conversations))
         .fallback(fallback)
         .layer(Extension(state))
         .layer(Extension(embedding));

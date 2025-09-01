@@ -6,6 +6,7 @@ use std::sync::Arc;
 
 use crate::consts::{ASSISTANT, LANGUAGE_MODEL, LLAMA_URL, ROBOT_NAME, SYSTEM, USER};
 use crate::db::database::Database;
+use crate::http::error::AppError;
 use crate::model::bother::Bother;
 use crate::vector::embedding::Embedding;
 
@@ -25,25 +26,6 @@ struct RobotChoice {
 #[derive(Serialize, Deserialize, Debug)]
 struct RobotResponses {
     choices: Vec<RobotChoice>,
-}
-
-// TOOD: move this somewhere else
-pub struct AppError(anyhow::Error);
-
-impl IntoResponse for AppError {
-    fn into_response(self) -> axum::response::Response {
-        let error_message = format!("Internal Server Error: {}", self.0);
-        (StatusCode::INTERNAL_SERVER_ERROR, error_message).into_response()
-    }
-}
-
-impl<E> From<E> for AppError
-where
-    E: Into<anyhow::Error>,
-{
-    fn from(err: E) -> Self {
-        Self(err.into())
-    }
 }
 
 pub async fn bother_blockito(
@@ -73,14 +55,16 @@ pub async fn bother_blockito(
         "You are a helpful chatbot named {ROBOT_NAME}.\nUse only the following pieces of context to answer the question. Do not reponsed with nothing. Don't make up any new information:\n{context} /no_think",
     );
 
-    println!("Instruction prompt: {}", instruction_prompt);
+    // println!("Instruction prompt: {}", instruction_prompt);
 
     // if no conversation_id, create a new conversation
     // store initial message
     // store llama response
     // return as expected
 
+    println!("Bother conversation_id: {:?}", &bother.conversation_id);
     let conversation_id = if bother.conversation_id.is_none() {
+        println!("No conversation_id, creating new conversation");
         db.insert_conversation(&bother.user_id, "temp title, we'll figure this out later")
             .await?
     } else {
@@ -89,7 +73,7 @@ pub async fn bother_blockito(
     };
     println!("Conversation ID: {}", conversation_id);
     let conversation = db.get_conversation_by_id(&conversation_id).await?;
-    println!("Conversation: {:?}", conversation);
+    // println!("Conversation: {:?}", conversation);
 
     // I actually think this is wrong...
     // this will alter the sysm prompt each time
@@ -98,13 +82,6 @@ pub async fn bother_blockito(
         "role": SYSTEM,
         "content": instruction_prompt,
     })];
-
-    // for message in conversation {
-    //     messages.push(json!({
-    //         "role": message.sender_type,
-    //         "content": message.message
-    //     }));
-    // }
 
     db.add_message_to_conversation(USER, &conversation_id, &bother.message)
         .await?;
@@ -132,6 +109,8 @@ pub async fn bother_blockito(
     let parsed_body: RobotResponses = serde_json::from_str(&body)?;
     // TODO: consider combining if more than one choice
     let message = parsed_body.choices[0].message.content.clone();
+    // might want to create and store the message id instead of letting the db do it
+    // would be able to send to FE easier
     db.add_message_to_conversation(ASSISTANT, &conversation_id, &message)
         .await?;
 
@@ -140,7 +119,8 @@ pub async fn bother_blockito(
     Ok((
         StatusCode::OK,
         axum::Json(json!({
-            "message": message
+            "message": message,
+            "conversationId": conversation_id
         })),
     ))
 }
