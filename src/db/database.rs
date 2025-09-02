@@ -96,19 +96,19 @@ impl Database {
         sender_type: &str,
         conversation_id: &str,
         message: &str,
-    ) -> anyhow::Result<()> {
+    ) -> anyhow::Result<String> {
         let id = Uuid::new_v4().to_string(); // TODO: can i not use to_string() here?
         sqlx::query(
             "INSERT INTO messages (id, sender_type, conversation_id, message) VALUES (?, ?, ?, ?)",
         )
-        .bind(id)
+        .bind(&id)
         .bind(sender_type)
         .bind(conversation_id)
         .bind(message)
         .execute(&self.pool)
         .await?;
 
-        Ok(())
+        Ok(id)
     }
     pub async fn insert_conversation(&self, user_id: &str, title: &str) -> anyhow::Result<String> {
         let id = Uuid::new_v4().to_string(); // TODO: can i not use to_string() here?
@@ -217,6 +217,7 @@ impl Database {
                 id: result.id,
                 created_at: result.created_at,
                 topic: result.topic,
+                // probably eventually want a created by
             });
         }
 

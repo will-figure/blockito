@@ -46,7 +46,7 @@ async fn main() -> anyhow::Result<()> {
         // GET /conversation/{conversation_id}
         .fallback(fallback)
         .layer(Extension(state))
-        .layer(Extension(embedding));
+        .layer(Extension(embedding)); // TODO: remove this and just use the embedding db
 
     let listener = TcpListener::bind(format!("127.0.0.1:{PORT}")).await?;
     println!("Using embedding model: {EMBEDDING_MODEL}");

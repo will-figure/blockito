@@ -84,7 +84,8 @@ pub async fn bother_blockito(
         "content": instruction_prompt,
     })];
 
-    db.add_message_to_conversation(USER, &conversation_id, &bother.message)
+    let _user_message_id = db
+        .add_message_to_conversation(USER, &conversation_id, &bother.message)
         .await?;
     messages.push(json!({
         "role": USER,
@@ -112,7 +113,8 @@ pub async fn bother_blockito(
     let message = parsed_body.choices[0].message.content.clone();
     // might want to create and store the message id instead of letting the db do it
     // would be able to send to FE easier
-    db.add_message_to_conversation(ASSISTANT, &conversation_id, &message)
+    let robot_message_id = db
+        .add_message_to_conversation(ASSISTANT, &conversation_id, &message)
         .await?;
 
     // TODO: look into streaming
@@ -121,7 +123,8 @@ pub async fn bother_blockito(
         StatusCode::OK,
         axum::Json(json!({
             "message": message,
-            "conversationId": conversation_id
+            "conversationId": conversation_id,
+            "messageId": robot_message_id,
         })),
     ))
 }
