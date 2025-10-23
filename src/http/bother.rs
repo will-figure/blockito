@@ -1,4 +1,3 @@
-use axum::{http::StatusCode, response::IntoResponse};
 use reqwest;
 use serde::{Deserialize, Serialize};
 use serde_json::json;
@@ -28,11 +27,20 @@ struct RobotResponses {
     choices: Vec<RobotChoice>,
 }
 
+#[derive(Serialize, Deserialize, Debug)]
+#[serde(rename_all = "camelCase")]
+pub struct BotherResponse {
+    message: String,
+    conversation_id: String,
+    message_id: String,
+    responding_to_message_id: String,
+}
+
 pub async fn bother_blockito(
     axum::Extension(db): axum::Extension<Arc<Database>>,
     axum::Extension(embedding): axum::Extension<Arc<Embedding>>,
     axum::Json(bother): axum::Json<Bother>,
-) -> Result<impl IntoResponse, AppError> {
+) -> Result<axum::Json<BotherResponse>, AppError> {
     println!("Bother received {:?}", bother.message);
     // basically, hit the embedding model
     // use that to send to the language model
@@ -84,7 +92,7 @@ pub async fn bother_blockito(
         "content": instruction_prompt,
     })];
 
-    let _user_message_id = db
+    let user_message_id = db
         .add_message_to_conversation(USER, &conversation_id, &bother.message)
         .await?;
     messages.push(json!({
@@ -119,12 +127,11 @@ pub async fn bother_blockito(
 
     // TODO: look into streaming
     // TODO: something something full chat response
-    Ok((
-        StatusCode::OK,
-        axum::Json(json!({
-            "message": message,
-            "conversationId": conversation_id,
-            "messageId": robot_message_id,
-        })),
-    ))
+    // TODO: does it make sense to include the id of the message we're responding to?
+    Ok(axum::Json(BotherResponse {
+        message,
+        conversation_id,
+        message_id: robot_message_id,
+        responding_to_message_id: user_message_id,
+    }))
 }
