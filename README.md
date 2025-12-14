@@ -5,7 +5,7 @@ on top of our customer service training data.
 
 Currently, `cat-facts.txt` is our fake training data and this is basically a rust
 version of [Hugging Face's basic RAG](https://huggingface.co/blog/ngxson/make-your-own-rag),
-but I ripped out/replaced all the stuff I didn't like.
+but I ripped out/replaced all the stuff I didn't like (`python`/`ollama`).
 
 ## Getting Started
 
