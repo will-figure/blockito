@@ -1,0 +1,2263 @@
+**Note:** If placing an **outbound call to an applicant/borrower**, please ensure it is **only placed during the following hours:
+
+Weekdays:** 8:00 AM to 9:00 PM borrower local time
+**Weekends:** 9:00 AM to 6:00 PM borrower local time
+
+Business Hours:
+
+- Mon-Fri 6a-9p PT
+- Sat-Sun 6a-5p PT
+
+This **does not include individuals that are in current/active contact** such as those attempting to connect to a notary or those in chat requesting a call.
+
+Figure can only conduct business in English and we cannot accept documents in any other language. If an applicant needs to supply a document in another language we can accept an accompanying Certified Translation to be reviewed.
+
+# Scripts
+
+🚨 **Note:** Any **bolded script** must be said or sent **exactly** as it is written.
+
+💡 **Customer Verification (CV)** is required at the beginning of all new interactions and must be completed prior to discussing any application or account specifics.
+
+The three (3) pieces of information which can be utilized for a CV interaction are as follows:
+
+- **First and last name (suffix is not required)**
+- **Last 4 of Social Security Number (required) *(Not applicable when SSN is not yet present in CSP)***
+- **Date of birth (MM/DD/YY)**
+- **Full address (including zip code) Can be the mailing address or the property address**
+- **Stated Income (During application process) (can be used only if SSN is not present and the DOB was mistyped)**
+
+**Three (3) of the four (4) pieces of information must be confirmed, in full, *every time*.**
+
+**Note: We are unable to confirm the existence of an account or application if CV is not performed successfully.** 
+
+Please see the [job aid](https://www.notion.so/Job-Aids-f1ce8edc854e472d82a9c619d355cc81?pvs=21) for more information.
+
+### 💡**High-Risk Transactions**
+
+ *(Applicable to Primary Applicants/Borrowers)*
+
+**Certain requests are considered “high risk” and require an extra level of Customer Verification:**
+
+- **Requests to change email address**
+- **Requests to change phone number**
+- **Requests to change address (Does not apply to Cancel or Modify/Restart process)**
+- **Password Reset Help Requests**
+
+This can **ONLY** occur on a phone call. High risk transactions are not permitted on email or chat interfaces.
+
+**If an applicant has any of the above requests, agents should be asking for TWO of the following pieces of verification information from the Photo ID (passport, driver’s license) provided at the time of originations.**
+
+- **ID Number**
+- **ID Address or Place of Birth**
+- **Issue Date**
+- **Expiration Date**
+    - If the ID has expired, we should request a new image of their ID to be sent to [myaccount@figure.com](mailto:myaccount@figure.com) for review.
+
+**If an applicant hasn’t proceeded far enough to have a validated ID on the application, a cancel/reapply will be necessary in the case of these requests**
+
+**If:**
+
+1. **The ID is expired, or**
+2. **The borrower gets a new ID from a different state**
+
+**AND they no longer have access to the email that is currently on file, please escalate to #agent_team_requests so a Specialist can submit to Financial Crimes for review to determine how to proceed.**
+
+💡**Account Change Requests for Funded Loans**
+
+After the high-risk CV review, if a borrower requests to update their email or phone number, agents must take an additional fraud-prevention step: the borrower must state the current email or phone number on file.
+
+- For email changes, they must state their current email.
+- For phone number changes, they must state their current phone number.
+
+If the borrower cannot provide this information, the agent may not proceed with the change.
+
+</aside>
+
+</aside>
+
+<aside>
+💡 **CV Fail Script**
+
+*“Unfortunately, I am unable to verify the account credentials that you have provided. For privacy reasons, I am unable to discuss application/loan specifics at this time. However, I can discuss any general questions you have regarding our process at this time. If you were to call or chat back in at a later time and correctly verify the information, whoever answers your call will be able to discuss application-specific information with you.”*
+
+---
+
+- **SSN & DOB Failure are Critical & Require Escalation:**
+- If a caller cannot provide the correct SSN or their DOB, we should **not** confirm in other ways. Instead, finish asking all the questions (so they don’t know which one they got wrong), and then use a short script:
+
+*"We were unable to verify your information. We need to go through a separate verification procedure, and someone from our Enhanced Verification Team will call you."*
+
+- **Escalation Process:**
+    - If you are on an interaction and this happens, create an Escalation Review task to escalate to a specialist. Specialists should escalate to **Fin Crimes**. **Any time** someone cannot verify their SSN or DOB, it must be escalated in this manner.
+- **Protecting Profile Info:**
+    - Agents should **never** give out profile information. For example, saying, "I see your birthday is xx/xx/xxxx— is that correct?" puts us at risk. Fraudsters target this kind of information.
+- **If Fraud is Suspected:**
+    - Always leave a note, and **pin it**. **Fin Crimes** can remove the pin once cleared.
+</aside>
+
+<aside>
+🚫 **Cancellation Script**
+
+Cancel Reasoning:
+
+**"We cannot continue with your current application due to (*the reason*)."**
+
+If the reason for cancellation is not clear or the applicant does not provide a reason for cancellation, the best practice is to ask (via call and chat). See the example script below.
+
+**"For our records, may I confirm the reason you wish to cancel?"**
+
+**The reason for cancellation is not required to cancel an application** but may help the application move forward if the reason the applicant wishes to cancel can be resolved without cancellation.
+
+After stating the cancel reasoning, preface the disclosure script. Suggested verbiage below:
+
+**"Before we can proceed, I do want to let you know..."**
+
+OR
+
+**”I do need to read a disclosure prior to cancellation.."**
+
+Disclosure Script:
+
+**[Verbatim]**
+
+**“Once we cancel this application, it cannot be revived, and a new application will need to be submitted should you choose to reapply. With the new application, credit may be reviewed again, and we cannot guarantee approval or that the same offers will be presented. Do I have your permission to cancel the current application?”**
+
+</aside>
+
+### Caller Requests to Record the Call (Record Request Script)
+
+`*This does not apply to organizations that are required to record for training and/or quality assurance purposes.*`
+
+If a caller advises they are recording the call or asks permission to record the call, please state the following *verbatim*:
+**[Lender] does not consent to the recording.
+We decline permission.
+I am ending the call.**
+
+Agent will then disconnect the call without further conversation.
+
+## Call Script
+
+Before placing an outbound call, ensure you have the script for your Lender ready to go. 
+
+| Script |  |
+| --- | --- |
+| Inbound Calls | **Thank you for calling!
+This is <CSA Name>.
+May I please start with your first and last name?** |
+| Outbound Calls | **Hi, this is <CSA Name> calling from <Lender Name> on a recorded line for quality assurance purposes.
+May I please speak with <Customer’s Name>?
+Thank you! In order to talk about application-specific details, can you please verify your property address and the last four of your social?
+Thank you for verifying that.** |
+| Voicemail | **This is <CSA> calling from <Lender Name> following-up on the recent (rate prequalification / application) received.
+Please return our call at <Lender Number>.
+We will also be following up via email, thank you.** |
+| Dead Air | **Hello, is anyone there? [Wait a few seconds] Hello? [Wait another few seconds] Caller, I am not able to hear you if you are speaking. Please try again by giving us a call back at [Figure/PL number]. I will be disconnecting the call now.** |
+
+### Important Reminders:
+
+- **“Figure Lending LLC”** must be stated as the lender name when calling Figure Customers.
+- If you are calling a **Figure Wholesale** applicant, do not say ‘wholesale’
+
+---
+
+# Contact Information
+
+[Untitled](https://www.notion.so/248c06bd5c2e80b2ad2af284d58e2280?pvs=21)
+
+<aside>
+
+## LAAS Contact Information
+
+Guaranteed Rate and its affiliates utilize our infrastructure and loan origination system to offer the HELOC under their own branding. While they handle the full processing of their applications, we still handle eNotary, to include AV support, for them. The phone numbers listed here are to refer callers to if they attempt to ask any app related questions while agents are assisting with troubleshooting.
+
+[Untitled](https://www.notion.so/248c06bd5c2e802cae57c34f61acbce2?pvs=21)
+
+</aside>
+
+---
+
+<aside>
+
+## Other Departments
+
+[Marketplace Overview](https://www.notion.so/Marketplace-Overview-0284271f8ee4498896e0109767277abe?pvs=21)
+
+| Lender / Department | Phone | Email |
+| --- | --- | --- |
+| [**Marketplace**](https://www.notion.so/Marketplace-Overview-0284271f8ee4498896e0109767277abe?pvs=21) | (888) 851-4883 | marketplace_support@figure.com |
+| [**Celsius Refi:](https://www.notion.so/93eb8b984ca241f79682c7382d41cc67?pvs=21)
+Figure Lending**(U.S. excluding NY) | (888) 702-6626 | cryptolending@figure.com |
+| [**Celsius Refi:](https://www.notion.so/93eb8b984ca241f79682c7382d41cc67?pvs=21)
+Figure Markets Credit**(NY and International) | (888) 850-4490 | cryptolending@figuremarketscredit.com |
+| **Figure Pay/**Figure Pay app
+(money transfers, micro-loans) | (800) 260-1795 | myaccount@figurepay.com |
+| **MOHELA**
+(Servicing for prior Figure Student Loan Refinances) | (855) 571-2205 | figurestudentloans@mohela.com |
+</aside>
+
+# Questions and Answers
+
+<aside>
+ℹ️
+
+## **Who is Figure / Figure Wholesale?**
+
+- Figure is the largest non-bank lender of HELOCs in America and the home of the world's fastest HELOC. With Figure's 5-minute digital application process you don’t have to wait in line to cash in. Get your funds in as few as 5 business days and avoid the headaches of traditional lending.
+- Figure has over 2500 customer reviews with an average rating of 4.4 on [TrustPilot.com](http://trustpilot.com/). Visit TrustPilot and see what our customers are saying today!
+- Figure is a financial technology company reinventing and reimagining ways to improve financial products and education.
+- We’re transforming lending by creating a faster, simpler, and more transparent way to meet your financial goals. The process is easy, secure, and faster than ever before.
+
+### Credibility Question (Reviews)
+
+- Please visit [figure.com](http://figure.com/)’s blog to see exciting information about Figure. (https://www.figure.com/blog/news/)
+- If you would like to see verified customer reviews, we encourage you to check [Trustpilot.com](http://trustpilot.com/).
+</aside>
+
+## Who is [Lender]?
+
+- We are the largest non-bank lender of HELOCs in America and the home of the world's fastest HELOC. With our 5-minute digital process, you don’t have to wait in line to cash in.  Get your funds in about 5 business days and avoid the headaches of traditional lending.
+- We are a financial technology company reinventing and reimagining ways to improve financial products and education.
+- We’re transforming lending by creating a faster, simpler, and more transparent way to meet your financial goals. The process is easy, secure, and faster than ever before.
+
+## **What is the Home Equity Line of Credit (HELOC)?**
+
+*Internal note: it is not a “hybrid product”*
+
+It is a line of credit secured by the equity in your home. It is fully disbursed at the time of funding which means we give you the full amount of your line of credit upfront. It also includes the option for additional draws over time.
+
+- The additional draw limit is 100% of your total line of credit amount, which is the sum of your initial draw amount and origination fee. The length of time you may access the additional draw depends on the term length you choose.
+- Fixed and variable rates available depending on eligibility
+    - Variable Rate is live for all partners excluding LaaS, Goodleap, Longbridge, Bayview/Lakeview, CrossCountry, Credit Karma, and Figure NY.
+- The entire process can be completed online with approval in about 5 minutes. With us, you don’t wait in line! Go to our website and apply now to get started. [*[Please see Lender contact information above for specific websites]*](https://www.notion.so/HELOC-Call-Aid-d1728a26e1cb4714be5603e6632a7dfc?pvs=21)
+
+## Are you now open on Sundays?
+
+- Hours of operation will be:
+    - 6:00am - 9:00pm Pacific Mon - Fri
+    - 6:00am - 5:00pm Pacific Sat - Sun (excluding holidays)
+
+- Effective Sunday, February 21, 2021, we will now be open to better serve you.
+
+## **What’s the lowest rate available?**
+
+- Due to rate fluctuations, the most accurate way to obtain your rates for a Home Equity Line of Credit is by visiting our website and selecting the 'Find My Rate' option or connecting with your loan officer to start an application. By completing the pre-qualification process, you'll be able to view your personalized rates without affecting your credit score. If you need any assistance or have further questions, please don't hesitate to contact us.
+
+## **Home Equity Line Requirements**
+
+[Home Equity Line Requirements](https://www.notion.so/1ecc06bd5c2e80219a69ed7b393e6fa7?pvs=21)
+
+*The following requirements apply to Figure and all Private Labels:*
+
+- The Debt-to-Income (DTI) ratio must be less than 50%
+- A $150-$350 fee will be applied to applicants who live in manual notary counties
+- Applicants relying on income from employment are subject to Verification of Employment
+    - (We do not lend to unemployed borrowers at this time)
+    - (Retired applicants currently do not require VOE)
+
+**New York Specific Information (NY):**
+
+no secondary or investment properties
+
+80% max CLTV
+
+[newyork.figure.com](http://newyork.figure.com/)
+
+only 1st and 2nd lien position
+
+Shellpoint services NY loans, we do not.
+
+no trust ownership
+
+must be referred to as Figure Lending LLC always
+
+# **What is Credit Karma Home Loans? Is Credit Karma a Mortgage Lender?**
+
+Credit Karma Home Loans is a technology platform that helps Credit Karma members fulfill their home equity line of credit application. Credit Karma Home Loans is a mortgage broker only, not a mortgage lender or mortgage correspondent lender. Credit Karma has partnered with Figure as a Figure Wholesale broker partner to provide a 100% online HELOC experience for their members.
+
+## **Does Credit Karma Have MLOs?**
+
+When a Credit Karma member has a specific question about their application, our product and process, they will reach out to Figure Wholesale directly. Credit Karma members are NOT being referred to Figure by an MLO and we are responsible for answering all their questions and concerns to help them get to funding.
+
+CSAs will be expected to double-check the originator summary tab in Figure Wholesale loans and ensure we are NOT referring CK Members back to CK or their MLO.
+
+[](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdzzhDw0t0KdPNM94jbFGRHqKJPD2IbyadpSdkhepH9S1dukh-Nmje-ZrYAJdj9SzOmXiztgtytBRxBSrquu2mZAhbe3yZkQP9mldaY4SnMwjjSX1OtGkhs8K13mBBdIJXNQ0aMpAEdGZ6OfDxsUh6xiIm6?key=bG8UmUD6tn--VSIUtpKtXA)
+
+Any conversation with a CK Member that crosses the line into what is considered “licensable activity” will be escalated via the ATR channel in Slack. 
+
+Operations Managers/Specialists will assign outreach to that specific applicant to one of Figure’s Licensed CSAs. 
+
+Licensed CSAs will outreach CK members with an outbound call to answer their concerns within 24hrs.
+
+Per standard operating procedures, all interactions with a CK Member should be documented in CSP following the CSP Notation Template.
+
+## **FICO Bands/CLTV Bands/Max** Line of Credit **Amounts/Rate Types**
+
+- We offer line of credit amounts from…
+    - Figure: $15,000 - $750,000
+    - Figure Texas: $35,000 - $750,000
+    - Figure Wholesale and Private Labels: $25,000 - $750,000 **(GOODLEAP MIN LOAN AMOUNT $40K)**
+        - **Owning, Guaranteed Rate, Guaranteed Rate Affinity, Freedom Mortgage, Origin Point, UHM, and LongBridge maximum line amount: $400,000**
+- “We offer a maximum CLTV of 85% for primary residences and a maximum CLTV of 80% for secondary properties.”
+- “However, the maximum line of credit amount and CLTV offered is dependent upon your specific situation, which takes into account elements such as credit score, debt-to-income ratio, lien position, whether this is your primary residence, and property value.”
+    - (For Alaska, the minimum line of credit amount is $25,001 [not including o-fee])(effective 7/23/2020)
+    - For Minnesota: Some partners have a 100k minimum. Those partners are as follows:
+        - CITYWIDE_HOME_LOANS
+        - FAIRWAY
+        - GUARANTEED_RATE_AFFINITY
+        - HOMEBRIDGE
+        - MUTUAL_OF_OMAHA_MORTGAGE_INC
+        - NEW_AMERICAN_FUNDING
+        - ORIGINPOINT
+        - PROPER_RATE
+        - SYNERGY_ONE
+    - For Oregon, any Fairway application in any lien position the minimum line of credit amount is $50,000
+
+### **HELOC Primary Residence (non Multi-Family Residence)**
+
+| **Lien Position Range** | **Max Line Amount** | **Max CLTV** | **Credit Score Range** |
+| --- | --- | --- | --- |
+| 1-2 | $125,000 | 75% | 640 - 659 |
+| 1-2 | $125,000 | 80% | 660 - 679 |
+| 1-2 | $150,000 | 85% | 680 - 739 |
+| 2 | $200,000 | 80% | 680 - 699 |
+| 2 | $250,000 | 80% | 700 - 739 |
+| 2 | $250,000 | 85% | 740 - 850 |
+| 2 | $300,000 | 80% | 740 - 850 |
+| 2 | $350,000 | 75% | 740 - 759 |
+| 1 | $400,000 | 80% | 680 - 739 |
+| 1 | $400,000 | 85% | 740 - 850 |
+| 2 | $400,000 | 75% | 760 - 850 |
+| 1-2 | $750,000 | 75% | 760 - 850 |
+| 3 | $100,000 | 70% | 680 - 759 |
+| 3 | $150,000 | 70% | 760 - 850 |
+
+### **HELOC Secondary/Investment Property (non Multi-Family Residence)**
+
+| **Lien Position Range** | **Max Line Amount** | **Max CLTV** | **Credit Score Range** |
+| --- | --- | --- | --- |
+| 1 | $400,000 | 80%** | 680 - 850 |
+| 2 | $200,000 | 70% | 680 - 719 |
+| 2 | $275,000 | 70% | 720 - 759 |
+| 2 | $350,000 | 70% | 760 - 850 |
+
+### **HELOC (Multi-Family Residence)**
+
+| **Occupancy** | **Lien Position Range** | **Max Line Amount** | **Max CLTV** | **Credit Score Range** |
+| --- | --- | --- | --- | --- |
+| Primary Residence | 1 | $400,000 | 80% | 680 - 850 |
+| Primary Residence | 2 | $250,000 | 75% | 600-639 |
+| Primary Residence | 2 | $200,000 | 80% | 680 - 699 |
+| Primary Residence | 2 | $250,000 | 80% | 700 - 739 |
+| Primary Residence | 2 | $300,000 | 80% | 740 - 850 |
+| Primary Residence | 2 | $350,000 | 75% | 740 - 759 |
+| Primary Residence | 2 | $400,000 | 75% | 760 - 850 |
+| Secondary/ Investment | 1 | $400,000 | 80%** | 680 - 850 |
+| Secondary/ Investment | 2 | $200,000 | 70% | 680 - 719 |
+| Secondary/ Investment | 2 | $225,000 | 70% | 720 - 759 |
+| Secondary/ Investment | 2 | $250,000 | 70% | 760 - 850 |
+
+* The minimum loan amount is $110,000 for CLTV > 70% and <= 80%
+
+## HELOC Over 400K
+
+| **Metric** | **For Loan Amounts >$400K to $750K** |
+| --- | --- |
+| Min FICO | 760 |
+| Max CLTV | 75%
+70% - FL  Condominium (mid and high rise included) |
+| Valuation | Full Appraisal |
+| Max Lien | 2nd |
+| Occupancy | Owner-Occupied |
+| Eligible Property Types | Townhouse/Rowhouse, Condominium (mid and high rise included), Planned Unit Development (PUD), Single-Family Residence (SFR) |
+| IV Methods Available | All Methods |
+| Homes Listed for Sale | Ineligible |
+| Re-Draw Valuation | If redraw AVM Value is (<$1,000,000 & FSD<=13) or (>=$1,000,000 & FSD<=5) then AVM, else BPO |
+| O-Fee | Cap to $14k (from $12k) *for all organizations with an O-fee cap; not applicable for orgs without an O-fee cap ( applies only to orgs with an existing cap)* |
+|  |  |
+
+**Appraisal Fee**: The company pays the appraisal fee. Borrowers are **not** responsible for this cost, even if the application is cancelled or expires.
+
+**Appraisal Validity**: Appraisals are valid for **180 days**.
+
+**Reusing an Appraisal**: If an application is **C/R** (Cancel/Reapply) or **M/R** (Modify/Restart), submit a request through **Application_Flag_for_Triage** to transfer the previous appraisal to the new application.
+
+## Variable Rate Requirements
+
+[Variable Rate HELOC](https://www.notion.so/Variable-Rate-HELOC-294c06bd5c2e803ea7e9c0d10efd525d?pvs=21) 
+
+- 640+ FICO
+- 2nd and 3rd lien ONLY (no first lien)
+- Rate floor MINIMUM of 4.5%
+
+- Variable Rate is live for all partners excluding Guaranteed Rate, Guaranteed Rate Affinity, Freedom Mortgage, Origin Point, Goodleap, Longbridge, Bayview/Lakeview, CrossCountry, Credit Karma, and Figure NY.
+
+<aside>
+💡
+
+Although HELOCs with Variable rates are amortizing, they are not considered “fully amortized”.
+
+</aside>
+
+## Properties Listed for Sale
+
+- **HELOC for Homes Listed for Sales (Bridge Loan Alternative):**
+    - Applicants identified as home sellers (self-identified or via MLS matching) will be eligible for this product only
+    - CLTV cap - 80%
+    
+    - Origination fee only offered equal or above 2.99%.
+        - Subject to state o-fee cap. **If o-fee cap is below 2.99%, we will decline the application.**
+        - There's a new decline code ACTIVE_MLS_LISTING_OFEE.
+- **GoodLeap, Freedom Mortgage and Marlin do not lend to properties listed for sale.**
+- **CCM and West Capital Lending only offer a 4.99% o-fee on properties listed for sale. O-fee caps below apply.**
+
+## Origination Fee Caps by State
+
+- **Primary Lien O-Fee Restrictions, by State:**
+
+3.00% - NJ, PA
+
+2.00% - IN, LA, TN, TX, WA
+
+1.00% - NC
+
+0% - KY, ME, NY, RI, VT
+
+- **Junior Lien O-Fee Restrictions, by State:**
+
+3.00% - PA, NJ
+
+2.00% - WA, TX, TN, IN
+
+1.00% - NC
+
+0% - VT, SC, RI, ME, LA, KY, DE
+
+## **“Opting Out” from future credit offers?**
+
+- *If you do not want to receive prescreened offers from any company, you can call the consumer reporting agencies toll-free at 1-888-567-8688, visit their website at [www.optoutprescreen.com](http://www.optoutprescreen.com/), or write to them individually at:*
+    - *Experian Inc., P.O. Box 9532, Allen, TX 75013*
+    - *Equifax Options, P.O. Box 740256, Atlanta, GA 30374*
+    - *TransUnion, P.O. Box 505, Woodlyn, PA 19094*
+- *If you’d like to opt-out from our direct marketing mailings, we can help you with that now. We’d welcome any feedback you have on how to make our services more valuable. It might take up to 6 weeks for any in-process mail to reach you. Rest assured, after that period you will not receive future offers from us.*
+- Make sure to use the[DNC (Do Not Contact)](https://www.notion.so/DNC-Do-Not-Contact-124e3d7b9c30409697655a5bee20cafe?pvs=21) job aid to fill out a Do Not Contact form.
+
+## Eligible Property Types
+
+- Single Family Residences (SFR)
+- Townhomes
+- Quadruplexes
+- Triplex
+- Planned Unit Developments (PUDs)
+- Condos
+    - Including Mid-Rise and High Rise Condos
+- Duplexes (Min Credit Score of 680, Max DTI of 45%, Max 2nd lien position)
+    
+    ![Untitled design (3).png](https://prod-files-secure.s3.us-west-2.amazonaws.com/67bd6cb1-e155-4fd3-896d-36a5293baaa7/a8cfd4c4-5bfb-4831-a65f-03764247548a/Untitled_design_(3).png)
+    
+
+*Freedom Mortgage does not lend to properties with 3-4 units.*
+
+## **Ineligible Property Types**
+
+- Commercially-zoned real estate
+- Multi-family (5+) real estate
+
+- Manufactured housing, timeshares, log homes, or houseboats
+- Mixed-use properties
+    - Co-ops
+- Properties that are 20 acres or larger
+- Properties with a Reverse Mortgage
+- Properties purchased or transferred from an unsupported ownership type in the last 90 days
+- Properties owned by Land trusts
+- Leasehold Properties
+- Ground Lease Properties
+- Properties held in a LLC
+- Properties held in a Life Estate
+- Properties held in an irrevocable Trust
+- Properties held in more than one Trust
+
+## **Line of Credit Shopping / Considering my options:**
+
+- Thank you for considering [Lender], your application can get approved in about 5 minutes. We are the fastest HELOC on the planet.
+- Keep in mind you’re only a few minutes away from completing your application with us (outline pending stages/process as needed). Would you like assistance in the next steps?
+- When line of credit shopping, what is it specifically you are looking for? (this information will help us speak more specifically to fitting their needs)
+
+## **I just refinanced. Can I apply for a new home equity line right away?**
+
+- We recommend waiting 45 days after your refinance has been successfully recorded with your county before applying for additional financing with [Lender].
+- This is to ensure your liens are correctly reporting on both your credit profile, as well as our property data vendors which we use to calculate various details of your qualified offers.
+    - (Both of these sources tend to take between 45 days to “post” the new information)
+
+## **How will my HELOC appear on my credit profile?**
+
+- Your Home Equity Line will show as a “Revolving Tradeline” on your credit profile
+
+## **Should I include my Solar lien during lien selection?**
+
+- Yes, you should include your Solar lien during lien selection.
+
+## **My MLO gave me this number / I know that Figure is partnering with [White Label]. Can you help me?**
+
+- Thank you for reaching out! This line is for processing Figure applications only. I would be happy to provide their contact information for future reference.
+
+<aside>
+❗ Click [HERE](https://www.notion.so/HELOC-Call-Aid-d1728a26e1cb4714be5603e6632a7dfc?pvs=21) for all WL contact information.
+
+</aside>
+
+Inbound call to the incorrect lender (applicant unaware if they called the correct line):
+
+- *(Example Script)* Thank you for verifying that information, You have contacted [Lender Name]. The platform we use to originate HELOCs is used by other lenders. Because we use the same origination system, we can determine that your application is with [Lender Name]. The correct number to reach them is [888-___-____].
+
+In the *rare* event you receive the call that you just transferred on the new correct line you may use the script below to explain:
+
+- 'Yes, you may have just spoken with me on the other line; for accurate data capturing we do want our applicants calling in from the correct phone numbers. Now that I have you on [Business'] line I am more than happy to assist!'
+
+## **I am a [White Label] MLO looking to get more product information for my applicant. I know that Figure is partnered with us, can you help me?**
+
+**(If the MLO Calls the Figure phone #)**
+
+- Thank you for reaching out! This line is solely for assisting Figure applicants. For more information on our offerings, please contact [[Private Label Name](https://www.notion.so/HELOC-Call-Aid-d1728a26e1cb4714be5603e6632a7dfc?pvs=21)] at [Private Label Phone #] for more information about the partnership with Figure.
+- [Mortgage Loan Originator (MLO) Customer Verification](https://www.notion.so/Customer-Verification-CV-Procedure-1f94963112cb41ebb4a494190f2e69d0?pvs=21)
+
+<aside>
+💡
+
+If an MLO asks to escalate:
+
+“I apologize for any frustration that has occurred. While I am not able to directly address your concern, I am able to get you in touch with someone who can. I will have someone reach back out to you within 24 hours.”
+
+Add the MLO information to the tracker below:
+
+https://docs.google.com/spreadsheets/d/1OB9Cx5d6Y-wA53oWhQA99EJTArD19plGpOQcpmz8puI/edit?gid=0#gid=0
+
+</aside>
+
+## **I am a [White Label] MLO looking to get support on Lead Portal. Can you assist me with this?**
+
+- Thank you for reaching out! This line is solely for assisting Figure applicants. For support relating to your Lead Portal access, please reach out to your internal support representative.
+
+<aside>
+💡
+
+If an MLO asks to escalate:
+
+“I apologize for any frustration that has occurred. While I am not able to directly address your concern, I am able to get you in touch with someone who can. I will have someone reach back out to you within 24 hours.”
+
+Add the MLO information to the tracker below:
+
+https://docs.google.com/spreadsheets/d/1OB9Cx5d6Y-wA53oWhQA99EJTArD19plGpOQcpmz8puI/edit?gid=0#gid=0
+
+</aside>
+
+## **I am a [White Label] borrower with a funded loan looking to apply for another HELOC. Can I use my same account?**
+
+- No, you will need to create a new account to apply for another HELOC.
+
+## **Inquiry from a Business or a Mortgage Broker about our product and how to utilize it.**
+
+## **How can I offer Figure to my customers?**
+
+- Thank you for your interest! We offer other partnership opportunities beyond Private Label for both licensed and non-licensed entities. You may request a demo here https://www.figure.com/partner-heloc/ and a representative will reach out to you.
+
+## **I’ve already requested a demo, what now?**
+
+- **(If less than a week ago)** Thank you so much for your interest in Figure’s products! Our sales team is currently reviewing your information to ensure we’re a good match from a partnership standpoint. We truly appreciate your patience as they complete this process.
+- **(If over a week ago)** I’d recommend reaching out directly to our Sales team at partners@figure.com for an update on your demo request. They’ll be able to provide you with the latest status.
+
+## **Can I originate my own HELOC?**
+
+- Please check directly with your Broker or Partner organization to confirm whether originating your own HELOC is permitted under their internal policies.
+- Policies may vary and are subject to change at each organization’s discretion.
+
+## Working with an Assigned LO (*In-House Loan Officer - Sales Team*)
+
+[**Inbound Calls with Assigned Loan Officers**](https://www.notion.so/Inbound-Calls-with-Assigned-Loan-Officers-1cfc06bd5c2e80d4a202c489553bf19c?pvs=21)
+
+| **Sales Team Business Hours:** | Monday - Friday | 6 am - 3 pm Pacific/ 9 am - 6 pm Eastern |
+| --- | --- | --- |
+
+**The call occurs during Sales Team Business Hours:**
+
+*I see that you are working with a dedicated Loan Officer, [LO Name]. They are best equipped to assist you. Before I transfer the call, let me give you the best phone number to get in contact with them.*
+
+Phone number: 888-642-0369.
+
+**The call occurs outside of the Sales Team's business hours AND customer has LO specific questions:**
+
+*That's a great question that involves specifics best discussed with your licensed Loan Officer. Since [LO Name] isn't available right now, I can arrange a call back. When is the best time for them to get in contact with you?*
+
+- SPOC LO List with links
+    - **SPOC LO Assigned [Corey West Booking](https://00dkd000001njoumaq.my.leandata.com/l/7snzSGX/corey-west-FLO-15)**
+        - https://00dkd000001njoumaq.my.leandata.com/l/7snzSGX/corey-west-FLO-15
+    - **SPOC LO Assigned [Dedrian Kay Booking](https://00dkd000001njoumaq.my.leandata.com/l/LzDmwY2/dedrian-kay-FLO-15)**
+        - https://00dkd000001njoumaq.my.leandata.com/l/LzDmwY2/dedrian-kay-FLO-15
+    - **SPOC LO Assigned [Ivy Kirtley Booking](https://00dkd000001njoumaq.my.leandata.com/l/dhXkzfh/ivy-joy-kirtley-FLO-15)**
+        - https://00dkd000001njoumaq.my.leandata.com/l/dhXkzfh/ivy-joy-kirtley-FLO-15
+    - **SPOC LO Assigned [Charles Greenaway Booking](https://00dkd000001njoumaq.my.leandata.com/l/nw7VZtG/charles-greenaway-FLO-15)**
+        - https://00dkd000001njoumaq.my.leandata.com/l/nw7VZtG/charles-greenaway-FLO-15
+    - **SPOC LO Assigned [AJ Johnson Booking](https://00dkd000001njoumaq.my.leandata.com/l/3Pr5C8f/aj-johnson-FLO-15)**
+        - https://00dkd000001njoumaq.my.leandata.com/l/3Pr5C8f/aj-johnson-FLO-15
+    - **SPOC LO Assigned [Kiana Brown Booking](https://00dkd000001njoumaq.my.leandata.com/l/P8cyFy9/kiana-brown-FLO-15)**
+        - https://00dkd000001njoumaq.my.leandata.com/l/P8cyFy9/kiana-brown-FLO-15
+    - **SPOC LO Assigned [Laura Torres Booking](https://00dkd000001njoumaq.my.leandata.com/l/RrHw6pj/laura-torres-FLO-15)**
+        - https://00dkd000001njoumaq.my.leandata.com/l/RrHw6pj/laura-torres-FLO-15
+
+---
+
+# **Frequently Asked Questions**
+
+## **Which credit bureau and FICO model does [Lender] use?**
+
+[Lender] uses the Experian FICO 9 model to determine credit eligibility.
+
+## What is the Crypto-backed Personal Loan?
+
+Please utilize the Crypto Call linked here for further information:  
+
+[ORIG Crypto-backed Personal Loan Call Aid](https://www.notion.so/a5f58ae034314dc489212826567cdf76?pvs=21)
+
+Figure is now offering the Crypto-Backed Personal Loan. The crypto-backed loan allows you to put up crypto as collateral to access cash, while continuing to HODL/without selling. We currently support BTC and ETH. You can borrow up to 55% of the value of your crypto at a fixed interest rate of 15%, and your collateral is held by our qualified custodian and will never be rehypothecated. You can make monthly interest-only payments over the course of your 12-month term, or opt to defer interest for a fee. Your remaining balance and any deferred interest is due in full at maturity. Once your loan is paid, any excess collateral and/or fiat will be returned to you. In order to find out if you are eligible visit https://www.figure.com/crypto-backed-loan/. Select get started and enter, enter the basic eligibility information to learn if you qualify!
+
+## **Is my line of credit approved? How long until I am approved?**
+
+**Applicant in Soft Credit (Pre Note_Signing stage)**
+
+- You are currently pre-approved. You will be asked to confirm your offer after the hard credit check. (This takes place after verifying your income and linking your disbursement account.) From there, your offer is approved pending the completion of your notary session.
+
+**Applicant in Hard Credit (Post Note_Signing stage)**
+
+- Your offer is approved pending the completion of your notary session and final review.
+
+- **Can I pay off other lines of credit/unsecured debt with the HELOC? (DDP Direct Debt Payoff / Intellidebt)**
+    - [**Intellidebt (Direct Debt Payoff/ DDP )**](https://www.notion.so/Intellidebt-Direct-Debt-Payoff-DDP-215c06bd5c2e80a0a853ffb32ed12436?pvs=21)
+
+## **Can I change my selected offer amount?**
+
+Prior to uploading your ID image, you will be presented with a “final offer” screen. Once this occurs, you can modify your offer (if you qualify). If the application has advanced past this point, a C/R will be required to modify the offer. If the application has not gotten to this point yet, you just need to wait for the final offer screen to come up.
+
+[](https://lh7-us.googleusercontent.com/5PIyuW5ot6PmTjvCTPO60-FeeCn_pLNP-1vNBOvreG_7DmRqQoHzHcbO3pVNtIIZ3d4kGDy76ZYZFzsRDec0pQcJORkzLnJU98cTK8MGvMExv-l1Rc_cyretMCeAjVIHrs5T_qyRZf-lslEztxQP798)
+
+## **How are my rates determined? (how did you calculate my rate)**
+
+The maximum line of credit amount and CLTV offered is dependent upon your specific situation, which takes into account elements such as credit score, debt-to-income ratio, lien position, whether this is your primary residence, and property value.
+
+## **Lowered Rate Email**
+
+- You requested lower rates and we listened!  The email you received is an offer to reapply for a Home Equity Line.  You can do this by logging in using the same email you did previously.
+
+## **I received an email with an offer to apply through Figure + Unlock. What is this?**
+
+- Figure currently has a partnership with Unlock Technologies to allow applicants that were previously unable to proceed with a Figure Home Equity Line to explore another option in unlocking the equity in their homes.
+- If you are interested in seeing what Unlock has to offer, you can follow the link contained in the email you received, which will take you to the Unlock Technologies website for more information!
+
+## **Does [Lender] plan on raising or lowering rates when the Fed makes rate changes?**
+
+- Thank you for asking about recent rate changes. We update all of our rates for each product frequently and we pride ourselves on providing the best possible consumer rates. You can view our lowest possible rates on our website and apply online to find out which rate you qualify for.
+
+## **Why am I being referred to one of your partner organizations?**
+
+If you were declined for a Figure HELOC, you may qualify for one of our partner organizations other loan products.
+
+Figure is not affiliated with these partners and none of your personal information will carry over between applications.
+
+INTERNAL NOTE: This means that when someone gets declined for a HELOC on Figure.com , they may see a message referring them to one of our partner orgs. This is currently live with New American Funding ONLY, as of 1/5/2024.
+
+[](https://lh7-us.googleusercontent.com/p2pHFW_wCLBzLAUsI1QiKrRvhtPe8IMYg6ryjYHZMpRpaGNpYXdI_ImUc5Hs2v0t-9iU5vbWlBMOeFTc75rOnay7lf69nvWbkfZzTppFO4KIU0FY5pFCuidWImJVObn2XouZYZxj7CXh8lxSpx_KxEk)
+
+## **NY ONLY:** Does Figure Service my loan?
+
+- We partner with Shellpoint to service our New York customers.
+
+## How do I opt out/disable of Two Factor Authentication (2FA)?
+
+<aside>
+❗ Only when all of the below troubleshooting methods have been exhausted are agents to escalate to specialists
+
+</aside>
+
+- I understand you are having issues with 2FA. I have a number of troubleshooting steps we can try to alleviate this issue.
+
+Troubleshooting steps:
+
+1. Ask your specialist to toggle the authentication tab, then send the applicant a login email/have them try to login on their end  
+2. If the email is an iCloud email, ask applicant if there is an alternative email address we could have permission to change to on their account, then send the applicant a login email/have them try to login on their end  
+3. Ask the applicant to use the Google Authenticator app, then send the applicant a login email/have them try to login on their end  
+
+[Video to Assist Applicant with 2FA](https://www.notion.so/Video-to-Assist-Applicant-with-2FA-c3d9697cf87f4c6d8e274c00960f5274?pvs=21)
+
+## Can I use a P.O. box as the address for my primary residence?
+
+No, P.O. boxes are not eligible to be used for primary addresses, *unless you are currently active duty military.*
+
+## **I did not receive my 1098**
+
+I am sorry you did not receive your 1098 in the mail. Let’s work together and try to identify a solution!
+
+- Review the applicant’s personal information
+    - Full name
+    - DOB
+    - SSN
+- Have they paid $600 or more in interest in 2022? 1098 forms do not get sent out to applicants who have paid less than $600 in interest for the tax year.
+- 1098 forms will be on their dashboard to view by 1/31. They will not be mailed out this year.
+
+## **There is a discrepancy on my 1098**
+
+- I do apologize for the inconvenience. Can you please advise what the discrepancy is?
+- Thank you for the information! This is certainly an edge case and we will work diligently to rectify the situation. We will reach out to you when the documentation has been updated.
+
+## **SMS Program:**
+
+<aside>
+💡 Why opt in (long-term benefits -- welcome message only content at launch)?
+
+</aside>
+
+- Receive updates about your application including action items, appt. reminders, etc.
+- Receive notifications about your line of credit payment (e.g., due date, confirm payment receipt)
+- Receive early notification of new products or offers
+
+### Figure Waitlist [NON-WL]
+
+To help you stay up to date with any new information surrounding our product availability, we encourage you to sign up for our waitlist on [Figure.com](http://figure.com/). This will allow us to notify you when we resume offering our HELOC in your area! 
+
+**In progress application (pre-hard credit);**
+
+Due to the ongoing events related to Hurricane Ian, we have temporarily paused the offering of our product in your area. As we determine how to move forward with our impacted customers, we would like to make you aware of two things regarding your in-progress application:
+
+First, we understand that the first concern is your safety and that of your loved ones. We have extended the expiration date of your prequalification to ensure you have enough time to move forward once the storm has passed.
+
+Second, because we use an automated valuation system rather than a broker price opinion or full in-person appraisal, we may require a Property Condition Report before we are able to fund your line of credit, assuming you choose to move forward with your application once it is available again. This may significantly increase the timeline in which we are able to fund your HELOC, and in a case where the condition of the property is insufficient, we may be unable to proceed. However, this report is prepared at no cost to you.
+
+**In progress application (post hard credit);**
+
+Thank you for reaching out regarding your HELOC prequalification! Due to the ongoing events related to Hurricane Ian, we have temporarily paused the offering of our product in your area. As we determine how to move forward with our impacted customers, we would like to make you aware of a potential change regarding your in-progress application:
+
+Because we use an automated valuation system rather than a broker price opinion or full in-person appraisal, we may require a Property Condition Report before we are able to fund your line of credit, assuming you choose to move forward with your application once it is available again. This may significantly increase the timeline in which we are able to fund your HELOC, and in a case where the condition of the property is insufficient, we may be unable to proceed. However, this report is prepared at no cost to you.
+
+## **What type of home ownerships are eligible?**
+
+- We lend to borrowers whose properties are owned by sole, joint, and revocable trust owners.
+    - We do not lend on properties held in more than one trust.
+    - We do not lend on properties with split ownership types. *(e.g. …grants to John Smith, trustee of The John Smith revocable trust and Jane Smith as joint owners.)*
+
+## **Does [Lender] offer Forbearance or other forms of loss mitigation?**
+
+- Yes, **[Lender]** offers payment forbearance in 3 mo. increments for a maximum of 12 months over the life of the line of credit in the event you experience hardship.
+- During the approved forbearance period, you will not be required to make payments but interest will continue to accrue.
+- At the end of the forbearance period, the amount due is re-amortized over the remaining number of months left on the line of credit.
+
+**See Servicing-Forbearance section for more info on application requirements, credit reporting, and draw ability during forbearance period.*
+
+## **My property is held in a Trust. What documentation do you need from me?**
+
+For properties held in a Trust, we will need to review the full **Certificate of Trust** 
+Do you have a copy you can provide us? (Irrevocable trusts are not eligible).
+
+<aside>
+💡
+
+Internal note: Agents should **never** ask for, or imply that we can accept, full trust documentation. 
+
+**We are not permitted to recommend the applicant to take their property out of a trust. You may only advise regarding our policy on trusts.**
+
+</aside>
+
+### **What is a title report? How long does this take to process?**
+
+In some instances, we have to obtain a title report for the property to review accurate lien information. When this happens, it may take up to 5 business days for the report to be received from our third party.
+
+### Figure:
+
+All states except New York are trust eligible.
+
+Our private-label partners follow the same trust rules as Figure.
+
+<aside>
+💡
+
+## **Acceptable I.D.s**
+
+</aside>
+
+- In order to complete the application, you will need a valid, **US- issued** ID, which may be one of the following (An applicant is not required to be a citizen, but they must have a valid SSN, and a valid US issued ID):
+    - Driver’s License,
+        - Including Learner’s Permit
+        - Including Temporary ID Card (no paper, only a card is acceptable)
+        - Limited Term ID
+    - State ID,
+    - Passport,
+    - Passport Card, or
+    - Permanent Resident card.
+    - If your ID has expired, please re-apply as soon as you receive a valid ID.
+        - Active Duty applicants may submit their expired ID along with their active duty military orders or Statement of Service letter for review.
+    - If there are state-specific COVID extensions for IDs in place, please provide us context for additional review.
+- Scan **(in color**) and has passed MiTek agent is good to proceed
+- Scan **(in black and white**) and has passed Mitek. Agent must request a new id image
+- Applicant sent a scan and no ID has passed MiTek: Agent should request for a new image, non scan.
+- Scanned ID fails MiTek: Ask for a non-scan
+
+## Why did my ID fail? (Quality)
+
+- While reviewing your application, we were unable to authenticate the uploaded ID. Unfortunately, our system was unable to verify due to the image being illegible (possibly too blurry, or cut off around the edges).
+- Due to this, we will need to have you manually verify your identity by emailing us a color photo of the front of your ID. We require that you upload either a valid Passport, Driver's License, state-issued ID Card, or Permanent Resident Card.
+- Please reply to this email with a full-color image or scan of the front of your valid US ID, ensuring the photo is in an image format (such as PNG, JPEG etc.) and not a document file format (such as a PDF). We cannot accept black and white pictures or scans. We highly recommend taking a clear photo of your ID image for submission.
+- Here are some ways to make sure your ID is fully legible for our system:
+    - Place the ID on a flat, dark, and solid surface or background, and ensure all four corners of the ID are visible in the camera preview. Wait for the camera to focus, then take the picture!
+
+## **High Rates Rebuttal**
+
+- Our APRs are generally much lower than credit cards, and we don’t raise rates like credit card companies often do. In the home equity space, we’re very competitive --especially when considering we offer fixed-rates as well as variable rates.
+- Our fees are also typically much lower as we don’t charge for appraisals or title services. And you gain the convenience of an all-online application which saves you the weeks of waiting and piles of paperwork most home equity lenders required.
+
+## **Declined Explanation**
+
+- The ultimate approval depends on a broader and more updated set of information. This includes your FICO, CLTV, and DTI. We’d love to be able to serve you, so I encourage you to re-apply should your situation change.
+- Please see AAN Section for additional information
+
+## **Why can’t I use my preferred bank?**
+
+- If your financial institution isn’t currently covered, we’d be happy to help you find an [approved institution](https://plaid.com/demo/?countryCode=US&language=en&product=transactions).
+- We’re working hard to make that happen. We search for the best vendors that meet our high-security standards and cover a wide range of financial institutions across the country.
+
+## **Changing Application Information**
+
+- I’m sorry for the inconvenience. We’re working on a technological solution to make this easy. In the meantime, we will cancel your current application and you can just log in and select “find my rate” to re-apply and select your desired offer.
+
+## Changing offer (offer modification)
+
+- You will be presented with an option to modify your offer after you have successfully verified your income, and before your hard credit is pulled. (Internal note: This application status is called “Final Offer”)
+
+## **Can I change the Marital status on my application?**
+
+**Application status is Gen Closing Disclosure or Earlier:**
+
+We should be able to manually update that. Please upload your [divorce decree/marriage certificate] and we will follow up with you via email when the review and update is complete. ****
+
+- Request and collect proof of marital status to be escalated via #agent-team-requests for triage. Notes must be pinned before escalating.
+
+**Application Status is Note Signing or Later:**
+
+The marital status cannot be updated at this stage in the application. I can assist you with restarting the application so that you can enter the accurate marital status.
+
+- Agent can assist with M/R to update marital status.
+
+## **Funding Timeline.**
+
+- **Primary Residence:** Most funds are disbursed within 5 business days, which includes a 3-business day rescission period. (All calendar days except Sundays and Federal holidays.) After funds are disbursed, there can be a 2-3 business day processing period for ACH, depending on your financial institution.
+    - Note: we do not initiate funding on weekends, so if an applicant has a rescission period ending on a Friday, this will “end” at 11:59pm, and funding will be disbursed the next business day.
+- **Secondary Properties:** No rescission period. Most funding is disbursed within about 5 business days.
+- Please keep in mind, that after funding is disbursed there may be an ACH processing period depending on your financial institution. This is typically 2-3 business days.
+- You will receive an automated email when the fund transfer process is initiated.
+
+## [**Amazon gift card offer](https://docs.google.com/document/d/1gRlE1MXTKZ5cX09JOay0z0qplHi1AW_laZESmJj17eI/edit?ts=5cb125e3) (FIGURE)**
+
+- Congratulations on receiving a gift card offer from Figure.  When your deed of trust is recorded with the county, we initiate the processing of the gift card electronically. Gift cards typically arrive within 20 days, and you will receive it via email.
+
+*Should we be past the 20 days and they are calling inquiring about the gift card we should:*
+
+- Request any documentation from the applicant regarding the offer they received and escalate for research. We will need to see if they met the requirements/stipulations of the gift card offer. If it is determined they should have received one then a specialist can work with Gift Card channel to have one issued.
+
+## **Direct Mail (How did you get my information?) [FIGURE]**
+
+- Congratulations on receiving a prescreened offer from Figure.
+- Figure sends two types of direct mail advertisements. The first is a prescreened firm offer of credit. The second type of advertisement is an invitation to apply, rather than a firm offer of credit.
+- Figure pre-screens candidates based on our eligibility requirements using data sourced directly from the credit bureau (Experian) and public record property data providers. This information is obtained securely and legally through our direct mail process. To target potential borrowers, we legally purchased publicly available names and addresses of homeowners who may be eligible based on an estimate of property value.
+
+## **Why is there a house value on my flyer but you cannot pull an AVM/multiple properties? (You're just trying to steal my information.)**
+
+- In order to provide an efficient and streamlined application process, [Lender] uses property value and history information based on publicly available county record data that produces an automated valuation model.  Some property values may however be unavailable.  While this is an uncommon occurrence, [Lender] does not currently have an alternative valuation model to support your application.  As a result, we are unable to proceed with your application at this time.  (If no AVM or financial history)
+
+## **Online Reviews “BBB” or “Other” [FIGURE]**
+
+- Figure prefers to deal directly with our customers and strongly believes this is the fastest, most efficient way to support you.  If you would like to see verified customer reviews, we encourage you to check [Trustpilot.com](http://trustpilot.com/).
+
+## **What documents are required for the application process?**
+
+- Our fully automated application process is paper free. In most cases, all we require is a copy of your valid state-issued ID and potentially proof of homeowners insurance. If your home falls under a trust for ownership type we would also require a copy of your trust certificate.
+
+## **Would this line of credit be tax deductible?**
+
+- *Can* be, but not in all instances. It depends on how the money is ultimately used, amongst several other variables.
+- For specifics to your scenario, we recommend syncing with your local tax advisor for more information.
+
+## What is [Lender]’s **Nationwide Mortgage Licensing System** (NMLS**)**?
+
+- What is [Lender]’s NMLS?
+    
+    [Untitled](https://www.notion.so/2c7c06bd5c2e8098a786dde64400fa04?pvs=21)
+    
+
+---
+
+## I would like to learn more about refinancing my Celcius Crypto loan/submit a loan request. Can you help me?
+
+- Of course, we'd love to assist. Visit http://figure.com/celsius-refinancing for general information including how to begin the process with us.
+- *For questions from customers who have started the process and need assistance with a pre-existing application/account, direct them to* email celsiusrefin@figure.com
+
+## Can I have a HELOC and DSCR app at the same time?
+
+No, only one application can be live at a time. If we come across one of each open, one must be cancelled.
+
+# **Product Questions**
+
+## **What is the value of my home (from the AVM)?**
+
+- [Lender] estimates the value of your property based on information provided by 3rd parties.  The estimate takes into account information such as recent sales of similar properties and historical pricing trends.
+
+**If a borrower is upset with the AVM provided, you can utilize this script:**
+
+*We understand your concern, and we want to assure you that we take your frustrations seriously. Our system operates with an automated process, and as a result we are unable to override or manually change any property data in our system.
+”Please note that our providers don't have the ability to support our applicants directly, so all concerns and inquiries must be sent to Figure.
+We are more than willing to reach out to our third-party property data providers regarding the concern, but given the complexity of getting data from sources such as your county, we aren't able to provide a specific timeline on any changes to a record, or speak to if one is able to be performed.”*
+
+## **I recently completed a HELOC *with Figure or another lender*. Do I have to wait to apply for another HELOC?**
+
+- **We require you to wait 45 days after your prior line of credit with us is completed** *(this relates to the date we receive the recorded documents from your county, not necessarily the date you signed the final paperwork*) before applying again.
+- This is to ensure that accurate and updated information is reported from our various data points used to determine accurate qualifications and potential offers.
+
+*(internal note: **for* line of credit*s through Figure,** the 45 days “starts” from the date the app hits Complete status. Sync with a specialist to confirm dates if not sure)*
+
+- The aggregate amount of the line of credits is subject to a limit of $75,000 (if <=679 Credit Score), $150,000 (if >=680 and <=759 Credit Score), and $750,000 (if >=760 Credit Score).
+    
+    The max line of credit amount per property is $750,000 (only if 760+)
+    
+
+## **If I currently have an FPL how long do I have to wait to apply for a FHEL?**
+
+- If you currently have a FPL there is no waiting period to apply for a FHEL.
+
+## **How do I report fraud? (I think my identity was stolen.)**
+
+- If you believe you have been the victim of identity theft, there are several steps you should take immediately to protect yourself.
+- First thing to do is contact any creditor involved to notify them of the fraud.
+- Notify the credit bureaus to add a security alert to your credit report. You can do this online by contacting the Experian [Fraud Center](https://www.experian.com/fraud/center.html) or by calling 1-888-397-3742.
+- It's also a good idea to contact your local police department to file an identity theft report.
+
+<aside>
+💡
+
+Please escalate via agent_team_requests Slack channel (ATR), for Fraud review if the applicant states they did not complete the application or believes their identity was used without consent.
+
+</aside>
+
+## **I recently purchased my property. Do I have to wait to apply for a FHEL or FPL?**
+
+<aside>
+💡 Applies to the below situations:
+
+1. Property was financed
+2. Property was bought outright
+</aside>
+
+- **We require you wait 90 days after the purchase of your property is completed** *(this relates to the recording date, not necessarily the date you signed final paperwork*) before applying for the Home Equity Line.
+- This is to ensure that accurate and updated information is reported from our various data points used to determine accurate qualifications and potential offers.
+- **NOTE: The 90-day ownership timeline is in effect from the date of transfer to an ownership type we can proceed with.**
+
+## **Can I apply for multiple lines of credit with [Lender]?**
+
+- Yes! However, you must apply under the **same** email address (identity) used on your prior line of credit, and the previously funded line of credit must have been in “Complete” status for at least **45 days before applying again** *(recorded with the county, and recorded docs provided back to us for upload to their line of credit profile)*.
+
+## **Line of Credit Terms**
+
+- [Lender]’s Home Equity Line offers line of credit terms of 10, 15, 20 and 30 years. Click “Find my Rate” and submit the first page of the application to see what line of credit terms you qualify for.  (>=640 - 10, 15, 20 and 30)
+
+## **Credit Union Discount** (this option is presented during the Offer Select stage)
+
+<aside>
+💡
+
+- **Credit Union discounts are NOT offered to 1st lien HELOCs**
+</aside>
+
+- We offer a discount of up to [(See Above)](https://www.notion.so/HELOC-Call-Aid-d1728a26e1cb4714be5603e6632a7dfc?pvs=21) for applicants that opt-in to apply to become a member of one of our Partner Credit Unions.
+- Private Label Partner Applicants are only offered a CU discount if their CLTV is 80% or under. (Figure Wholesale and GR LaaS - including GR affiliates, are NOT eligible for CU discount).
+
+## **AutoPay Discount**
+
+- We offer a discount of up to [(See Above)](https://www.notion.so/HELOC-Call-Aid-d1728a26e1cb4714be5603e6632a7dfc?pvs=21) to applicants that opt-in to autopay.
+- Those who do not wish to opt into a membership with a Credit Union for the discount will be able to opt into Autopay independently in the app flow. Otherwise, you can opt for autopay to be toggled on post-funding, though you will not see an APR Discount if opting in at that time.
+
+(this option is presented during Offer Select stage)
+
+## **Why must I opt-in to a Credit Union + Autopay to receive the discount?**
+
+- When you select “opt-in” you are simply opting into applying for membership. The Credit Union may approve membership and fund a basic savings account in your name if they purchase your completed Home Equity Line. You can choose to use the savings account or not, but it can not be closed until the HELOC is paid off and closed. Additionally, there are no fees associated with the savings account.
+
+## **Credit Union Partners [FIGURE HELOC]**
+
+- Quorum Federal Credit Union
+- Teachers Federal Credit Union
+- Valley Strong Credit Union
+- All In Credit Union
+
+## **Can I close my Credit Union account after the line of credit is originated? [FIGURE HELOC]**
+
+- If your line of credit is sold to a Credit Union after origination, the savings account must remain open while the line of credit is in repayment. Once the line of credit is paid in full, the savings account may be closed at any time.
+
+## **Security Instrument: 1/12 Clause**
+
+- If your property taxes or insurance payments fall behind, or an involuntary lien is placed on the property, we reserve the right to pay it for you and spread the cost over 12 months of payments.  You will be provided notice and an opportunity to cure any unpaid liens prior to this clause being enforced.
+
+## **HELOC Agreement: Right to inspect**
+
+- Under certain circumstances such as natural disasters, [Lender] may require an exterior property inspection to assess damage to your home.
+
+## **HELOC Agreement: Waiver of Homestead rights**
+
+- Under our agreement, you will waive the homestead rights of the property in order to prevent an unknown individual from claiming ownership of the property during the term of our line of credit. Rest assured, this is a standard waiver for creditors and it does not impact your property taxes in any way.
+
+## **HELOC Agreement: Payments (4b), Prepayment Re-amortization**
+
+If you make a payment that includes your min monthly payment plus 10%, or greater, of your principal balance , our system will automatically re-amortize your loan causing the payment amount to decrease.
+
+## **HELOC Deed of Trust: Section 19 - Assignment of Rents**
+
+- Under this section, you agree to inform [Lender] of any change of primary residence status to secondary property type status (ie: rental and investment property).  In the event that you default on your line of credit, we can claim any rental income generated by the property.
+
+## **What happens to my HELOC if I should pass before it is paid off?**
+
+- We will have to work with every individual in this type of situation as it could be different for each borrower. However, under our agreement, the lien on the property does remain active until it has been paid and closed.  With this in mind, one would want to ensure this line of credit is handled in the same process of handling the rest of the decedent's estate.
+
+## **HELOC Fees**
+
+Figure does not charge account opening fees, maintenance fees, or prepayment penalties. Figure only charges an origination fee, which is the cost for us to provide you with a loan. The fee ranges from 0-4.99% of your initial draw (capped at $12,000), depending on your credit profile and the state where the property is located and is amortized (included) in the loan payment schedule. You may also be responsible for paying the costs (i.e., the amounts a third party charges us) of valuation if an AVM is not available for your property ($180), manual notarization if your county doesn’t permit eNotary ($380), and recording fees ($0 - $315) and recording taxes, which vary by state and county ($0-$1,400 per one hundred thousand dollars)
+
+- The Late Fee only applies to loans originated after 09/16/2024.
+- Late fees are charged on the 16th day of being late
+- To confirm the late fee amount, review the Loan Page, under Asset Details find the Late Fee Amount.
+- If there is a red X there is no Late Fee
+- Borrowers will be charged a fixed fee of 5% of the total minimum monthly payment due, except for the states below
+- The states below will generally be charged the lesser amount
+
+*Except for:
+
+- Indiana: 5% of payment or $25 max fee
+- Iowa: 5% of payment or $30 max fee
+- Louisiana: 5% of payment or $15 max fee
+- Maine: 5% of payment OR $10 max fee
+- Mississippi: 4% of payment
+- New York: 2% of payment
+- South Carolina: 5% or $23 max fee
+
+- Wisconsin: 5% of payment
+- If loan <25k, $10 max fee
+
+### Texas
+
+- If loan is 10% APR or lower, lesser of 5% of payment due or $7.50
+- If loan is 10.01% APR or higher, lesser of 5% of payment due or $10.00
+- It is based on the original rate, not current active rate
+- No Late Fee for, NC, OR, NV
+
+You will see the origination fee and manual notary fee (if applicable) on your line of credit offer page when selecting a term
+
+Script for manual notary fees
+
+*Depending on the location of your property, you may be required to pay a manual notary fee if electronic notarization is not an option.*
+
+*If this fee applies to your* line of credit*, it won't impact your APR and will come out of the total* line of credit *amount, so you won't have to pay this out of pocket.*
+
+*This fee could apply in the following states:*
+
+AK, AL, AR, AZ (only Pima Co.), CA, CT, DC, FL, GA, IL, IN, KS, LA, MA, ME, MI, MN, MO, MS, MT, NC, ND, NH, NJ, NM, OH, OK, OR, PA, RI, SD, TN, VA, UT, VT, WA, WY
+
+## **Variable Origination Fee**
+
+- We offer variable origination fees to allow our borrowers the opportunity to truly customize a financial solution that meets their needs.
+- The origination fee is a one-time fee that may be selected by the borrower during prequalification. If an origination fee is selected, it is capitalized as part of the total line of credit amount, so the borrower doesn’t have to pay the fee up front. Instead, it is paid off over time as part of the regular monthly payment on the line of credit.
+- A higher origination fee reduces your APR and monthly payment but increases your total line of credit amount.
+- The fee ranges from 0-4.99% of your initial draw, depending on your credit profile and the state where the property is located, and is amortized (included) in the loan payment schedule.
+- For states with an origination fee “cap” (preventing the origination fee from meeting the above boundaries), an o-fee may present based on the state’s “cap”. See specialist for assistance
+    - Ex: Texas has a 1.99% O-Fee cap
+
+- Properties in states capped at the federal origination fee limit will only see offers where origination >2.99%, ie:
+    - Figure-Retail: 3.99, 4.99
+    - Figure-Wholesale: 2.99
+    - PL-Retail: 3.99, 4.99
+    - PL- Wholesale: 2.99
+    - Properties in states with origination fee caps <2.99% will not have this logic applied, and will be able to see rates capped at the state’s origination fee cap per current logic.
+
+## **Early Payoff**
+
+- You may pay back your line of credit at any time. We don’t charge any prepayment penalties.
+
+## **Do I need to repay the HELOC before I sell my property?**
+
+- The line of credit has to be paid before the new buyer takes ownership. You may either pay off your line of credit balance with your own funds before selling or at closing as part of the sale proceeds. Either option has no penalty.
+
+## **Whose income should I include/ can I include my spouse’s income on the application?**
+
+‣ 
+
+- [**Homestead/Community Property states ONLY**](https://docs.google.com/spreadsheets/d/1IGVtMuSGrnf8_3vYDprk0Sr8mQRghyOTlCERgdFdHt0/edit#gid=0): You may include your income, as well as that of your spouse if it is considered community income in your state of residence. You may include salary, bonuses, retirement income, rental income, and any other income you can provide supporting documentation for.
+- **There are only 14 states where spousal income cannot be used even if the spouse is on the title;** CT, DE, GA, HI, IN, ME, MD, MA, NY, OR, PA, RI, UT, & VA.
+
+<aside>
+💡 *The only income that may be used on an application is that of the primary applicant and (if applicable) their spouse. No other vesting owners' income may be used.
+
+In these states, the applicant **should not** state spousal income on the application and they **cannot supply spousal income** documentation for income verification.
+
+In all other states we offer FHEL, applicants, if married, can state spousal income on the application and use spousal income documentation for income verification.*
+
+</aside>
+
+## **Application FICO/Credit Check**
+
+- Checking your rate involves what’s called a “soft credit pull.” It does not affect your credit score.
+- When you submit an application, we will request your permission to do a “hard credit pull,” which may affect your credit score.
+
+## **How long do I have to complete the application?**
+
+- Our applications remain active for 14 days if you have not yet continued beyond our account linkage stage (for income verification and linkage of disbursement account).
+- Once your line of credit documents are generated for your review (note_signing), another 29 days are provided to complete your application with us.
+- If your application expires, you’re welcome to reapply using your same email identity. Please note that rates and qualifications may change over time.
+
+## **Can I get a line of credit on my paid-off home?**
+
+- Of course! We offer both first liens and subordinate liens on your primary residence.
+
+## **If I select Primary Residence, must I remain there for the term of the line of credit?**
+
+- If you occupy the property as your primary residence and unforeseen circumstances require you to relocate then we, most likely, could not accelerate the line of credit.
+
+## **My credit is frozen/locked. How do I proceed?**
+
+- This prevents us from acquiring the information needed to generate potential offers for you.
+- For frozen credit:
+    - To proceed you will need to either schedule a thaw or unfreeze your credit with Experian. From there, you can press “retry” on your application page and we will attempt to run soft credit again. No need to reapply!
+- For locked credit:
+    - To proceed you will need to contact Experian to have your credit unlocked before returning to the application and pressing the “retry” button. We will then attempt to run soft credit again. No need to reapply! Make sure to keep your credit unlocked for the duration of the application.
+
+*(Internal Note: Soft Credit can be re-run 3 times. Hard Credit can be re-run 1 time.)*
+
+---
+
+# Verification of Employment (VOE)
+
+<aside>
+💡 If someone calls in attempting to verify employment for a Figure employee, they should be directed to email [peopleoperations@figure.com](mailto:peopleoperations@figure.com). We do not do over-the-phone employment verifications.
+
+</aside>
+
+## **Why does verification of employment need to be completed?**
+
+- Verification of employment is an industry-standard practice.  We complete this process on your behalf making it hassle-free!
+
+## **How is employment verified?**
+
+- We do everything in our power to make the Verification of Employment (VOE) process as smooth as possible.
+- We offer a multitude of paths to complete the VOE, which do not require outreach to your employer.
+- If alternate VOE options are unsuccessful and employer outreach is required, we simply ask for a few pieces of information regarding your Human Resources department then we’ll handle the rest!
+- If unreachable by phone, we will attempt verification through written means (email).
+
+## **What is required to verify my employment?**
+
+- For us to conduct the verification of employment, the applicant must provide:
+    - Employer name
+    - Employer address
+    - Employer phone number/extension
+    - HR contact
+    - HR contact’s job title
+
+## [Lender] **was unable to validate my provided employer information**
+
+- Thank you for contacting us regarding your verification of employment!
+- While attempting to complete your verification of employment we were unable to verify your employer’s (name, address, phone number, HR contact).
+- Are you able to provide updated information so we may proceed with your verification of employment?
+
+## **VOE in Community Property States (AZ, CA, ID, LA, NV, NM, TX, WA, WI)**
+
+- If the primary applicant is unemployed, but their spouse *is* employed, we will conduct VOE through the spouse’s employer information, once the Spousal Authorization Form has been provided. (note: this is only for properties located in community property states as outlined to the left)
+- If both the primary applicant and their spouse are employed, we will only conduct VOE for the primary’s employer.
+
+---
+
+# **Additional Draw**
+
+## **How does the draw work?**
+
+*100% DRAW*
+
+- Additional draws are based on your credit limit (initial draw + applicable fees).
+- As you begin to pay down your line balance, you will be able to redraw up to 100% of your credit limit.
+- Additional draws must be at least $500 and the total outstanding balance cannot exceed 100% of the credit limit.
+- “The APR for your Home Equity Line of Credit (HELOC) is determined by two factors: the prime index and the fixed margin rate specified in your HELOC agreement. When you make an additional draw on your HELOC, the APR is calculated based on the current prime index. “
+    - (Fixed-Rate) “If the current prime index is lower than what it was when you initially opened the HELOC, a rate floor specified in your agreement will be used to calculate the APR for the draw. In simple terms, the APR for your HELOC depends on the prime index and fixed margin rate. If the prime index goes down when you take out more money, a rate floor will ensure that your APR doesn't drop below the original."
+- Your monthly payment may increase.
+- Your credit will not be re-run (no new hard credit pull will occur)
+- GR, GR Affinity, CityWide, Origin Point, ProperRate LaaS applications ONLY: You may not exceed 25 draws during the life of the loan
+
+## **Additional Draw Periods**
+
+**DRAW TERMS**
+
+- 10 year → draw term = 3 years
+- 15 year → draw term = 4 years
+- 20 year → draw term = 4 years
+- 30 year → draw term = 5 years
+
+A five year term with a two year redraw period was eligible for HELOC applications that started on or before 7/17/2025. 
+
+## **What is the term for additional draws?**
+
+The term for additional draws is from the date of the additional draw to the end of your original term.
+
+## **When a borrower makes a one-time payment on their FHEL account, how long will they have to wait before credit is available for a redraw?**
+
+6 business days
+
+## **Can I pay back 100% of the line as soon as I receive it?**
+
+- You can immediately repay the line after your initial disbursement and we don't have any prepayment penalties, however there are a couple things to consider:
+    - You would still have a regular monthly payment until any origination fee, notary fee, and accrued interest have been paid.
+    - Additionally, with any future draw(s) the APR will be determined at the time of request, so the rate may differ from what's selected during the application process. Draw period can range, but is part of the terms selection process. Refer to your HELOC Agreement for details on the additional draw feature and how APR will be determined at the time of request.
+    - With any future draw requests, a new AVM will be run and if the value of the property has declined significantly below the appraised value at origination, your right to obtain an additional draw will be suspended until the significant decline in value no longer exists. Refer to section 10 of your HELOC Agreement for additional details.
+
+---
+
+# **Notary Session**
+
+## **e-Notary Process**
+
+- **You connect with our eNotary through a video conference by logging into your customer dashboard and selecting “Talk to a notary”.**
+- You’ll need a device that has a camera and microphone so you can interact with the eNotary.
+- Our eNotary will complete all legal signing requirements in about a 10-minute session.
+
+## **Notary Type Guidance – eNotary vs. Manual Notary**
+
+If an applicant asks whether their county allows eNotary or requires manual notarization, you can check the **Recording Spreadsheet [[HERE](https://docs.google.com/spreadsheets/d/1xedw9CfvJQQzKqMUq1wgKt2zMCaOo38n9pU5peoKDAQ/edit?gid=0#gid=0)]**.
+
+- **Green** = County accepts **eNotary**
+- **Red/Yellow** = **Manual signing** required
+
+Be sure to inform the applicant that this can change between now and when their application is submitted, as it depends on their county's current acceptance status.
+
+## **When can I complete my eNotary session?**
+
+- Our eNotaries are available Monday through Friday from 6 AM to 9 PM Pacific Time and Saturday through Sunday from 6 AM to 5 PM Pacific Time, excluding major holidays. If you apply outside these hours, you’ll have the option to schedule an appointment during available business hours at your convenience.
+- There is a required 3 day waiting period before signing notary documents for applicants in Vermont
+- There is a required 3 day waiting period from when AVM is pulled before signing notary documents for non-primary (secondary/investment) properties where the HELOC will be in the 1st lien position (related to 1st lien appraisal cooldown requirement). eNotary applicants will see a holding screen that will not let them enter eNotary, and will advise them when they can proceed.
+- Manual Notary applicants will be able to schedule their appointment as normal, but it won't let them schedule sooner than the end of the 3-day cooldown.
+
+## **Manual Notary**
+
+- Some counties require a “wet ink signature” for recording purposes. In those cases, we will arrange for a notary appointment and any applicable notary charge will be capitalized into the total line amount and deducted from the gross disbursement
+- Four states require an additional witness (or witnesses) to be present for the signing on top of the signers present on the application. The breakdown is as follows:
+    - **GA**: 1 Additional Witness
+    - **LA:** 2 Additional Witnesses
+    - **SC/CT:** 2 Additional Witnesses (notary can be one of the witnesses)
+    - Note: Additional Witnesses must be over the age of 18, not a signer already signing the loan docs, and have a valid, unexpired US-issued ID. The witness cannot have a financial interest in the HELOC.
+- There is a required 3-day waiting period before signing notary documents for applicants in Washington, DC.
+
+## **How and when does my additional signer connect?**
+
+- Any additional signer identified in the application process is required to log in and complete a separate eNotary session.
+- They will receive an email inviting them to set up a session after completing the online application.
+
+## **Can I complete my notary session overseas?**
+
+We do not support international signings. All manual notaries must occur within the United States or its territories. We’re happy to support the closing once all signers are within the required jurisdiction. If a signer won’t be present while the application is active, you’re welcome to reapply upon their return. Please note that reapplying will require the completion of a new application.
+
+## **How do I reschedule my manual notary appointment?**
+
+- To reschedule your appointment, we need the date, exact time, and location of the new appointment. The appointment must be 24 hours or more from now. (unless the reschedule happens via email, then it must be 48 hours or more from now)
+- If you are unable to complete your scheduled notary session, reach out to us so we can assist.
+    - [**How to Action Task**](https://www.notion.so/ServiceLink-Mobile-Notary-Bypass-60a41064f7b2424eb54fb0e22eaafa8f?pvs=21)
+- For Texas HELOC signings, we require a minimum of 48 hours advance notice for scheduling to allow time for the generation of the electronically signed HELOC Agreement.
+
+## **If there is more than one person on the title of my home, does everyone on the title need to be on the line of credit? (Additional Signer)**
+
+- Only one owner applies and signs for the line of credit. However, any and all additional owners on the title are required to sign the mortgage document.
+- Additional signers are not required to be US citizens but must be 18 years of age with a valid, US issued ID and a Social Security Number (SSN) or Individual Taxpayer Identification Number (ITIN)
+
+## **Why do I have to add my spouse if I'm the sole owner of the property? (community property/homestead)(Additional Signer)**
+
+- You are being asked to add an additional signer because your property is located in a community property or homestead state. These states require spouses to be added to home equity line of credit applications simply to ensure awareness of the encumbrance. Rest assured, the additional signer's credit will not be pulled and they are not initially financially responsible for the line, though they may become responsible under certain circumstances, such as death or divorce.
+
+**NOTE**: If the applicant is married and is pushing back that they do not want their spouse on the application as the property type is sole, please request one of the following and escalate to a manager for approval to bypass additional signer.
+
+- Marriage certificate and recorded LTD showing property was purchased prior to marriage
+- Recorded interspousal grant deed
+
+## **Why do I have to add my spouse if we have signed a prenuptial agreement?**
+
+- You are being asked to add an additional signer because your property is located in a community property or homestead state. While a prenuptial agreement has been signed, we are unable to validate its enforceability. Additionally, we are unable to ensure the line of credit will only be repaid with separate income. Therefore, we ask you add your additional signer in order to proceed with the application.
+
+## **Power of Attorney (POA)**
+
+- Figure does not accept Power of Attorneys (POAs).
+
+## Notary Fees
+
+Applicants will be charged a manual notary fee if their application requires a manual notary. This fee is included in their total loan amount and is not required at closing. The fee will be visible on the offer screen as well as in their HELOC Agreement. For South Carolina, a licensed attorney is required at closing. Applicants can defer to Figure / SL to assign this attorney at an additional cost or select their own at no additional cost.
+
+- Normal notary fee in states other than South Carolina - $150
+- South Carolina ‘use our attorney’ fee - $350
+- South Carolina ‘use your own attorney’ fee - $0
+
+<aside>
+💡 Note that although borrower doesn't have to pay a capitalized fee for using their own attorney - they will have to coordinate compensation with their chosen attorney separately and out of pocket. Additionally, compliance advises that we cant coerce borrowers to not use our SL attorney.
+
+</aside>
+
+---
+
+# Application Cancel/Decline
+
+## **How to cancel my application?**
+
+- I would be happy to assist you in this process. We’d appreciate any feedback you have on how to improve your experience.
+- If you have entered the 3 business day cooling-off period, please download and fill out the Right to Cancel form, which can be found on your user dashboard and follow the steps outlined in the form. [**(Email us if you have any questions along the way.)**](https://www.notion.so/HELOC-Call-Aid-d1728a26e1cb4714be5603e6632a7dfc?pvs=21)
+
+## **Rescission Period**
+
+- The  Truth-in-Lending Act requires a 3-day “cooling off” rescission period for HELOCs.
+- This rescission period lasts for three consecutive business days (all calendar days except Sundays and federal holidays).
+- [Timeline](https://www.notion.so/Timeline-cdf4ac6be1cc4113afed6a233e0af81b?pvs=21)
+
+## **I want to rescind my line of credit**
+
+- In order to rescind, we require a written request. This must be emailed or postmarked no later than the last day of your rescission period, which is outlined on your Notice of Right to Cancel form.
+- Note: Please see the rescission cancellation process doc.
+
+**Note:** Please see the rescission cancellation process doc.
+
+## **Can I apply again after a decline?**
+
+- Of course, we’d love to serve you. If your application was declined, you are welcome to re-apply. We recommend you review the adverse action letter sent to you to understand the reason for the decision.
+
+## **Additional Applicants - Same Property**
+
+- Of course, we’d love to help. If there is another individual on the title, they can apply.
+
+## **Missing Financial History or Declination Code (CLTV_LIEN_WF)**
+
+- We’re sorry to hear we fell short of your expectations and we’re always looking to improve. We use automated valuation models (AVMs) and independent data sources to assess property value and review property history, respectively.  Unfortunately, our data sources are unable to retrieve sufficient public record documentation from your county, so we are unable to calculate your loan-to-value ratio. We apologize for the inconvenience.
+
+## What is the status of my application (fraud review)?
+
+- Your application is currently under review. At this time, I cannot provide a concrete timeline for its completion. Once that review is completed, it will be reflected on our end and we will reach back out to you.
+
+**Note:** We are not to disclose that an application is being reviewed by the fraud department.
+
+**Note:** Please reference the pinned note and fraud_review task on the application to determine if the application is under review by the fraud department.
+
+---
+
+# **Information Security**
+
+## **Privacy Policy?**
+
+• We respect your privacy and invite you to review our Privacy Policy, which is available on our website.
+
+## Is my personal information secure?
+
+• Yes, personal data security is a top priority. We deploy a range of leading security and encryption technologies designed to ensure your data remains secure.
+
+---
+
+# **PLAID ACCOUNT LINKAGE / INCOME VERIFICATION**
+
+[**Plaid Error Handling Guide**](https://www.notion.so/Figure-Plaid-Error-Handling-Guide-for-Customer-Support-198b98ba3b394157a128f284160d942d?pvs=21)
+
+## **IV pl Task // IV Not Started**
+
+- Hello!
+- Our system indicates you are at the income verification process but have not started yet
+- `Do you have a moment for me to explain how our process works?`
+- We pride ourselves on making the income verification process, which is traditionally tedious and time consuming, quick and easy
+- We allow applicants to verify their income is a variety of ways - most of which are automated
+- Our automated methods include linking bank accounts, linking the most recent year's tax return, or linking a payroll provider
+- These methods can verify income in a matter of seconds
+- In addition to the aforementioned, we allow certain employment types the option to upload their income documentation for manual review
+- `Are you ready to try verifying your income through one of our automated methods?`
+- `Is there any particular reason you didn't initially attempt the income verification process?`
+
+## **IV Nurture Task // IV Variance**
+
+- Hello!
+- Our system indicates you are at the income verification stage but haven't fully verified your income
+- `Do you have a moment to talk through next steps?`
+- `What method have you tried thus far?`
+- `Did you expect that method to fully verify your stated income?`
+- Let's try an alternate method.. [Plaid, Taxes, Pastubs (link or upload)]
+
+## **Banking Credentials (username and password)**
+
+- We do not store the username or password and cannot view the credentials during entry.
+- It’s the most effective way for us to protect your security against fraud or unauthorized use. Our authentication technology gives us a secure way to confirm your banking account ownership.
+- This protection is critical to ensure the safe disbursement of your funds and receipt of your payments.
+- **Plaid Concerns** *Suggested Script*
+    
+    Customer privacy is of the utmost importance to us. We use 256-Bit encryption with our data, which is implemented for sensitive and critical financial data, the same level of encryption the government uses. We know many people are hesitant to enter online banking credentials anywhere outside of the institution directly. It's smart to learn more about the security of a platform before sharing financial details with it. Plaid is a secure, audited, and trusted system that has built partnerships with most major US-based financial institutions and thousands of credit unions across the country. PLAID is a trusted provider for major commercial apps and services like Venmo, Robinhood, and Stripe, further signifying its validity and security, and an acquisition effort by VISA is currently ongoing for a value of $5.3 Billion.
+    
+
+## **Why do I have to connect my accounts?**
+
+- To prevent fraud, we verify your account ownership to set up your line of credit for disbursement.
+
+## Income Verification
+
+- We provide applicants numerous options for income verification and allows multiple sources to be linked.
+- Linkage of tax returns or Payroll Provider, and Financial Institution is required to verify your stated income.
+- We analyze inflow in your connected accounts to verify your stated income. We can perform this analysis through connected bank accounts, qualified asset accounts, tax returns and/or pay stubs.
+
+## What are qualified assets?
+
+- We accept Retirement, 401k, IRA, Roth, Savings, Brokerage, Money Market and CD accounts.
+
+## What year of tax returns are we accepting right now?
+
+- We currently accept 2024 taxes
+    - Self-employed applicants may link 2024 taxes (alone or in conjunction with 2023. If they only have 2023 and not 2024 they are not eligible.)
+
+## **What happens if my verified income is less than my stated income?**
+
+- If we identify a variance in your stated income compared to verified income, we will let you know. You will have the option to connect additional accounts, provide additional information (e.g. pay stubs and tax returns), or select a lower line amount based on your verified income.
+
+## **Why are some methods for verifying my income prohibited?**
+
+- Our income verification is completely automated. While we allow customers to upload manual documents in certain circumstances, that option is not available when certain criteria are present. In this scenario, the account(s) linked exceeded our Underwriting Guidelines' acceptable threshold of transfer credits. A high percentage of transfer credits reduces our confidence in the accuracy of the calculation; therefore, income must be verified through an alternate means. If income is not able to be verified through one of these **alternate means** then the application will be unable to proceed.
+
+**NOTE:** ***“Alternate means” = PointServ Payroll or Taxes***
+
+---
+
+# AAN Reason Responses
+
+## **Asset Depletion (system is unable to generate offers based off stated income)**
+
+- Our system compares the stated income on the application against the obligations listed on the credit report in order to determine the debt-to-income (DTI) ratio. Currently, your DTI ratio is outside of our policy.
+- Sometimes applicants mistakenly input their income forgetting to include rental or retirement income, using net income after taxes vs. gross income, or not realizing that they’re able to include their spouse’s income. If this is the case then you have the opportunity to input any forgotten income now. For CSA only;
+    - NOTE; not all applicants are given this option if they do not meet set UW criteria
+    - NOTE; "other income" on the first page is stating other income they receive regularly/reoccurring i.e. rental income or pension NOTE; asset depletion DOES NOT MEAN that the account is actively being withdrawn upon
+
+- In addition to updating your regular income if it was previously misentered, you may also state your asset balances to ensure we have an accurate understanding of your DTI. Please keep in mind any asset balances stated must be verified during the income verification stage.
+
+## **AVM_DRIFT**
+
+- Your AVM changed enough between the initial and final AVM that the CLTV band changed.
+
+## **AVM_FSD**
+
+- Unfortunately, due to insufficient data returned from our 3rd party vendor, our system was unable to return an AVM.
+
+## **Bankruptcy, Delinquencies, Multiple Inquiries, Limited Credit History**
+
+- Our credit decision was based on information obtained from Experian as outlined in the adverse action letter sent to you. You may request a copy of your credit report by contacting Experian at:
+    - Address: P.O. Box 9530, Allen, TX 75013
+    - Telephone Number: 1-888-397-3742.
+- If you find any errors in the reporting, you may dispute those directly with Experian.
+- If the most recent bankruptcy was filed within the last 60 months (5 years), application will be declined
+
+## **Collection**
+
+- Based on the information gathered from Experian, it indicates that you have delinquent past or present credit obligations that exceed a balance of $500.
+
+## **Credit Incomplete**
+
+- Your application expired after 14 days at this stage, hard credit was not pulled. You are more than welcome to reapply!
+
+## **Credit Utilization**
+
+- Several factors were considered in your decision, including your FICO score,  lien position, overall balance to credit amount ratio, and the total number of inquiries made in the last 3 months. The decision was based in part on information obtained from Experian as outlined in the Adverse Action Letter you received. You may request a copy of your credit report by contacting Experian at:
+P.O. Box 4500, Allen, TX 75013
+Telephone Number: **1 888 397 3742**
+If you find any errors in your report, you may dispute those directly with Experian.
+
+## **Deceased**
+
+- The SSN provided is being reported by Experian as deceased. If you believe this is inaccurate, please contact Experian.
+
+## **Delinquent past or present credit obligations**
+
+(F_DELQ_CURRENT, F_DELQ_MAX, F_TRANSFERRED)
+
+- Due to your current or prior payment history on a line, we are unable to grant additional lines. We apologize for any inconvenience.
+
+## **DTI_DRIFT**
+
+- You were presented with a counter offer due to insufficient income. Your application expired awaiting more income to be verified or awaiting for you to select an offer.
+
+## **Excessive obligations in relation to income  (DTI)**
+
+- [If declined for DTI]: Like most lenders, we look at what’s called a debt-to-income ratio which can help us estimate your ability to repay the line. This is where existing debt information is pulled for your credit report and compared against the income you provided in your application. Sometimes applicants mistakenly input their income--forgetting to include rental or retirement income, using net income after taxes vs. gross income, or not realizing that they’re able to include their spouse’s income. If you believe that your income may have been entered in error, we can assist you in reapplication.
+
+## **FACTA_HIT**
+
+- *No phone number present in alert*; Your application was declined due to a credit alert on your application, please contact Experian to resolve.
+- *Phone number present in alert;* Your application had a credit alert which required us to conduct an outbound call. Your application was decline due to unsuccessful outreach.
+
+## **FIRST_LIEN_HIGH_UTILIZATION_RECENT_TRADES**
+
+- *At this time, we're unable to provide an offer due to a combination of factors in your credit profile, including your current revolving utilization, the number of recently opened tradelines, and your credit score. These factors together affect eligibility and prevent us from moving forward with an approval right now.*
+
+## **FIRST_LIEN_RECENT_TRADES**
+
+- *We're not able to provide an offer at this time due to your current lien position and the number of recently opened tradelines. These factors affect eligibility, and as your credit profile changes, you may become eligible in the future.*
+
+## FICO DRIFT
+
+(Credit Score)
+
+- Your FICO score changed between soft credit and hard credit by enough to where you are no longer eligible for your previous FICO band.
+
+## **Foreclosure**
+
+- Any foreclosure within 60 months or any delinquency on your current mortgage (last 6 months) will disqualify you from our HELOC.
+
+## **Fraud**
+
+**(For unable to verify identity OR AAN decline reason “Your application shows a high potential of fraud or risk”)**
+
+- As an online lender, we utilize a risk engine (software) to authenticate an applicant's identity. Uploading your identification is part of that, but we use other information as well. This is a back-end system-generated check that is automated and we don't have the ability to override the result. Because the risk engine was not able to confirm all of the information you provided, the system will not advance your application. I'm sorry, but for privacy purposes, that's the extent of the information I have available at this time.
+
+## **How do I report fraud? (I think my identity was stolen.)**
+
+- If you believe you have been the victim of identity theft, there are several steps you should take immediately to protect yourself.
+- First thing to do is contact any creditor involved to notify them of the fraud.
+- Notify the credit bureaus to add a security alert to your credit report. You can do this online by contacting the Experian [Fraud Center](https://www.experian.com/fraud/center.html) or by calling 1-888-397-3742.
+- It's also a good idea to contact your local police department to file an identity theft report.
+
+## GIACT_EMAIL_VERIFICATION
+
+- If Sentlink Score < 750 and Giact email status = "Fraud Level 3+, Velocity Level 3+, Or Suspected Fraud".
+- This can happen for either the primary applicant or additional signers.
+
+**Adverse Action Notice:**
+
+Your application shows a high potential of fraud or fraud risk.
+
+## **What kind of support are we able to provide when we receive a call/chat/email from someone saying they've been scammed by an entity pretending to be Figure?**
+
+- Ask for a good call back number from the scam victim in case the fraud team needs to make contact.
+- Get as much information as you can from the caller on the scam itself. (screenshots, email addresses, websites, names and phone numbers involved)
+- Advise the caller to make contact with the credit bureaus to have an alert and/or a freeze placed on their file.
+
+- Advise the caller to report the incident via [Ic3.gov](http://ic3.gov/)
+ and [FTC.gov](http://ftc.gov/).
+
+- The scam victim should also attempt to file a report with their local law enforcement agency.
+
+## **ID_VERIFICATION**
+
+- Your application expired after 14 days at this stage, hard credit was not pulled. You are more than welcome to reapply!
+
+## **INCOME_VERIFICATION**
+
+- "Your application expired after 14 days at this stage, hard credit was not pulled. You are more than welcome to reapply!
+
+or
+
+- Your application expired after 14 days at this stage, not enough income had been verified to proceed at the time of the expiration. You are more than welcome to reapply if able to verify more income!"
+
+## INV_TAXLIEN
+
+- Your application was declined due to having a current cash out lien encumbering the property.  This could be a cash out refinance or home equity line or loan.
+
+## **INQ3MONTHS**
+
+- If there have been more than 5 credit inquiries in the last 3 months, we will not allow your application to proceed. We use Experian to collect this data, if you believe this to be incorrect you can reach out to Experian to resolve.
+
+## **KYC**
+
+- As an online lender, we utilize a risk engine (software) to authenticate an applicant's identity. Uploading your identification is part of that, but we use other information as well. This is a back end system-generated check that is automated and we don't have the ability to override the result. Because the risk engine was not able to confirm all of the information you provided, the system will not advance your application. I'm sorry, but that's the extent of the information I have available at this time for privacy purposes.
+
+## **INVALID_FICO1**
+
+- We were unable to retrieve your credit score from our third party partner. As a result, we are unable to proceed with your application.
+
+## **INVALID_FICO2**
+
+- Your credit returned insufficient history for the credit bureaus to generate a score. As a result, we are unable to proceed with your application.
+
+## **ITIN**
+
+- Our lending criteria require applicants to provide a valid Social Security Number (SSN), issued by the Social Security Administration. An Individual Taxpayer Identification Number (ITIN) is not accepted as a substitute under our credit policy. This requirement ensures we can accurately access credit reports, verify customer identity, and remain compliant with applicable regulatory requirements.
+
+## **LANDUSE**
+
+- "Currently, Figure only accepts property types that are single family residences, townhomes, condos (such as mid rise and high rise), or planned unit developments.
+
+or
+
+- We only lend on specific land use codes (102, 112, 116, 117, 148, and 163), any property coded with a different code will be declined.
+
+or
+
+- ""NEC"" means ""Not Elsewhere Classified"", essentially every county classifies the different types of residential properties differently and may just use the land use code ""100"" which is ""NEC"" even if labeled as a Single Family Residence."
+
+## **LAST_SALE_DATE**
+
+- It looks as though your property has been recently purchased or refinanced in the last 90 days, is that accurate?
+
+## **LIEN_POSITION**
+
+- Your application was declined due to lien position, we cannot have more than 2 existing liens on the property and Figure will occupy a max of 3rd lien position.
+- Private label will occupy a max of 3rd lien position.
+
+## LIEN_TYPE ([Texas Only](https://www.notion.so/Texas-HELOC-60079ac193e0432f8b306fd0e0e235c9?pvs=21))
+
+The HELOC would occupy the third or higher lien position, or the property recently underwent a cash out refinance or has a HELOC from another provider. A closed cashout REFI within the last 12 months will also trigger this decline.  
+
+## Lien Validation Decline
+
+This decline should be explained as lack of verifiable property data - please refer to AAN Lien Verification Decline for scripting
+
+## **LIEN_VERIFICATION**
+
+- **In order to provide an efficient and streamlined application process, we use property history information from our third party data provider and soft credit information from Experian to verify lien position. Unfortunately, due to insufficient data returned, the lien position could not be verified. As a result, we are unable to proceed with your application at this time and we apologize for any inconvenience.**
+
+## **Line currently flagged for bankruptcy**
+
+(F_BANKRUPTCY)
+
+- Your loan is flagged for bankruptcy. Because of this, we are unable to grant additional lines. We apologize for any inconvenience.
+
+## **Line currently flagged for foreclosure**
+
+(F_FORECLOSURE)
+
+- Your loan is flagged for foreclosure. Because of this, we are unable to grant additional lines. We apologize for any inconvenience.
+
+## **Max Product**
+
+- Based on your current (credit score or requested amount), we do not grant additional lines on the terms you have requested.
+
+**MISSING_FIN_HIST**
+
+- In order to provide an efficient and streamlined application process, Figure uses property value and history information based on publicly available county record data that produces an automated valuation model. Some property values may however be unavailable. While this is an uncommon occurrence, Figure does not currently have an alternative valuation model to support your application. As a result, we are unable to proceed with your application at this time.
+
+## **NAV_LANDUSE**
+
+- The drive-by property valuation you requested returned a property type that is not one of our approved property types. As a result, we are unable to proceed with your application at this time.
+
+## **NAV_NO_PROPERTY_VALUE**
+
+- We were unable to successfully complete your secondary property valuation as requested. This could be due to an inability to access the property or inadequate information available to us. As a result, are unable to proceed with your application at this time.
+
+## **NOAVMRETURNED**
+
+- In order to provide an efficient and streamlined application process, Figure uses property value and history information based on publicly available county record data that produces an automated valuation model. Some property values may however be unavailable. While this is an uncommon occurrence, Figure does not currently have an alternative valuation model to support your application. As a result, we are unable to proceed with your application at this time.
+
+## **NOCREDITFILE**
+
+We use Experian for our soft credit pull, unfortunately it looks as though they are not returning a match. You can reach out to Experian to resolve and reapply.
+
+## **Occupancy Status**
+
+Your application was declined due to the subject property not being owner-occupied. At this time, we only lend to primary residences in your state.
+
+<aside>
+🚨
+
+The Plaid risk fraud alerts are in place to protect our business. Never help or guide an applicant on how to bypass the alert by any means. Please stick to the scripts in Notion.
+If the applicant has further questions, the scripts direct them to submit an inquiry in writing to the address on the AAN.
+
+## PLAID_RSK_RISKYFI_NEGBALN
+
+*AAN Language*: (Based on the status of the account at the connected financial institution, no offers are available.)
+
+During [income verification/connect disbursement account] it was determined that one or more of the depository accounts you connected currently has a negative balance. As a result, we are unable to generate offers.
+
+You are welcome to reapply once the negative balance issue has been resolved.
+
+**[If applicant has further questions]:**
+
+Any additional questions should be directed in writing to [Lender]’s address provided in the Adverse Action Notice
+
+## PLAID_RSK_RISKYFI_INQ
+
+*AAN Language:* (Based on the status of the account at the connected financial institution and recent inquiries on the credit bureau report, no offers are available.)
+
+- Our underwriting identified a high number of non-mortgage, auto, and/or educational inquiries occurring within 14 to 30 days of your soft credit pull date. As a result, we are unable to generate offers.
+    
+    You may request a free copy of your credit report by contacting Experian at the address and telephone number information provided in your Adverse Action Notice. You may dispute any errors you find in the report directly with Experian.
+    
+    **[If applicant has further questions]:** Any additional questions should be directed in writing to [Lender]’s address provided in the Adverse Action Notice
+    
+
+## PLAID_RSK_NSF_RISKYFI
+
+*AAN Language:* (Based on the status of the account at the connected financial institution, no offers are available.)
+
+- During [income verification/connect disbursement account] our underwriting identified three or more NSF (insufficient funds) or overdraft transactions greater than $5 occurring within the last 365 days. As a result, we are unable to generate offers.
+    
+    **[If applicant has further questions]:** Any additional questions should be directed in writing to [Lender]’s address provided in the Adverse Action Notice.
+    
+
+## PLAID_RSK_NSF_LNST_FICOLT700
+
+*AAN Language:* (Based on the status of the account at the connected financial institution and your credit score, no offers are available.)
+
+- Several factors were considered in your decision including the number and recency of NSF (insufficient funds) and/or overdraft transactions in one or more of your connected accounts in the past year, evidence of higher-risk transaction activity in the last 180 days, and your credit score. This decision was based in part on information contained in your Experian credit report. You may request a free copy of your report by contacting Experian at the address and/or telephone information included in your Adverse Action Letter.
+    
+    **[If applicant has further questions]:** Any additional questions should be directed in writing to [Lender]’s address provided in the Adverse Action Notice.
+    
+
+## PLAID_RSK_NSF_LNST_NEGBALN_FICOGTE700
+
+*AAN Language:* Based on the status of the account at the connected financial institution and your credit score, no offers are available.
+
+- Several factors were considered in your decision, including a current negative balance identified in one or more of your connected accounts, the number and recency of NSF (insufficient funds) and/or overdraft transactions in one or more of your connected accounts in the past year, and evidence of higher-risk transaction activity in the last 180 days.
+    
+    This decision was based in part on information contained in your Experian credit report. You may request a free copy of your report by contacting Experian at the address and/or telephone information included in your Adverse Action Letter.
+    
+    **[If applicant has further questions]:** Any additional questions should be directed in writing to [Lender]’s address provided in the Adverse Action Notice.
+    
+</aside>
+
+## **PROPERTY_ACRES**
+
+- Figure currently only accepts properties that are under 20 acres.
+
+## **Property Condition Decline:**
+
+- Our property condition report provider has advised us that the condition of the subject property is not adequate. In order to provide an efficient and streamlined application process, we utilize information from our third party vendor to determine your property's condition in place of an appraisal. The property condition information is a required input for our automated underwriting system and, unfortunately, cannot be changed or modified at this time. I apologize for any inconvenience this may cause.
+
+## **Property value or type of collateral not sufficient - 1**
+
+(If no CoreLogic AVM)
+
+- In order to provide an efficient and streamlined application process, we use property value and history information from third-party, publicly available data providers. Some property values may be unavailable based on the data that we rely on. While this is an uncommon occurrence, we are unable to generate offers without a value. As a result, we are unable to proceed with your application at this time.
+
+## **Property value or type of collateral not sufficient - 2**
+
+(AVM in Property, but no AVM or lower value in Final AVM)
+
+- In order to provide an efficient and streamlined application process, we use property value and history information from publicly available county record data. We require the most recent data in order to make an automated underwriting decision. In some cases, the value of the home may change from pre-qualification. We will use the available value of the home at the time of final underwriting.
+
+## **Property value or type of collateral not sufficient - 3**
+
+(Ineligible property type/Land Use)
+
+- Currently, we only accept property types that are single family residences, townhomes, planned unit developments, or condos.
+
+## **Property value or type of collateral not sufficient - 4**
+
+(CLTV Decline)
+
+- Our underwriting process includes an estimate of the amount you owe on your property divided by the estimated value of your property. We obtain existing lien information, including outstanding liens and current property value, from Experian, publicly available county records, and other third-party data providers. Based on the information we obtained and our underwriting requirements, the equity in your property was below our minimum requirements.
+
+## **Property Ownership Type (Irrevocable Trust)**
+
+- A property held in an Irrevocable Trust is owned by the Trust, meaning the trust is financially responsible for the debt.
+- A property held in a Revocable Trust is owned by the Trustee(s), meaning the Trustee(s) is/are responsible for the debt.
+- This is consistent with Fannie Mae guidelines.
+
+## **Property Ownership Type (Life Estate)**
+
+- Currently, we only lend to properties held fee-simple.
+- Properties held in a Life Estate are ineligible for financing at this time because of the ownership structure between the life tenant and the remainderman. At this time, we are unable to support.
+- We apologize for any inconvenience this may cause.
+
+## **PROPERTY_VESTING**
+
+- Your FICO score changed between soft credit and hard credit by enough to where you are no longer eligible for your previous FICO band.
+
+## **PTI**
+
+- Like many lenders, we look at what’s called a payment-to-income ratio which can help us estimate your ability to repay the line. This is where we compare the estimated monthly payment of a new HELOC against the income you stated on your application. Sometimes applicants mistakenly input their income and forget to include rental or retirement income, use net income after taxes vs. gross income, or don't realize that they’re able to include their spouse’s income (in certain states). If you believe that your income may have been entered in error, we can assist you in reapplication.
+
+## **Rate Cap Decline**
+
+The rate that you qualified for exceeded the maximum rate allowed by law in the state where your property is located. Our automated underwriting system was unable to generate an offer that fell within the ranges permitted by your state so we are unable to proceed with your application at this time.
+
+## **Unable to verify property ownership**
+
+- As the applicant, you must be listed as an owner on title for the property. If the property is owned in a Trust, you must be an authorized signer of the entity.
+- (Tradelines reported under 90 days) Please provide supporting documentation to confirm ownership over 90 days.
+
+## Units
+
+- Our system was either unable to identify the number of units or was able to determine it is more than one unit. We do not offer loans to properties with more than one unit, or where we are unable to verify at this time. (Internal Note: This is a Texas-specific decline code)
+
+## **We do not make lines for properties with more than two outstanding liens**
+
+- Our records indicate the property you applied under currently has 3 or more existing liens
+- Currently we only support occupying a first, second, or third lien position on a property at this time.
+
+## **Your credit score is below our minimum requirement**
+
+- [If declined on FICO]: We require a minimum credit score of 600 (680 for secondary residences). Your Experian FICO 9 was reported as ___. Credit scores do fluctuate over time so please feel free to re-apply in the future.
+
+# **Post-Disaster Inspection (PDI)**
+
+## **PDI Requirement**
+
+- A post-disaster inspection report is a requirement for our HELOC in specific counties.The inspection report, obtained through a third-party vendor, provides valuable information regarding the property's structural integrity, potential hazards, and necessary repairs. Once the report is obtained, we will follow-up with next steps on your application.
+
+## **PDI Timeline**
+
+- "Typically, inspections are returned within 2-3 business days. However, please keep in mind that the actual turnaround time may depend on the availability of our vendor. In the case of a large-scale disaster, it may take considerably longer. We will reach out to you as soon as the inspection is complete. Is there anything else I can help you with?"
+
+## **PDI Decline**
+
+- "We have received the post-disaster inspection report from our third-party vendor, and unfortunately, the report reveals damages that exceed our maximum allowed threshold. Regrettably, we must inform you that your application has been declined based on the findings of the inspection report."
+
+---
+
+# **Servicing - Existing Customers (Post Loan)**
+
+**Servicing Contact Info:**
+
+P: 888-527-1950
+
+General questions: [myaccount@figure.com](mailto:myaccount@figure.com)
+
+Payoff Requests: [payoffrequests@figure.com](mailto:payoffrequests@figure.com)
+
+Open Mon-Friday 6:00 am - 6: 00 pm PST
+
+## Please transfer a call to servicing if the applicant has questions regarding:
+
+- **Insurance**
+    - Exceptions: “where do I send my insurance”
+        - [Myaccount@Figure.com](mailto:myaccount@figure.com) for all servicing docs/emails.
+- **Forbearance**
+    - Exceptions:
+        - “How do I apply for Forbearance”
+        - Download LAA form on the website [https://www.figure.com/forbearance/](http://www.figure.com/forbearance/) [Figure.com](http://figure.com/) → Borrow → Payment Assistance
+        - Offer to transfer to servicing to be sent LAA via docusign
+- **Subordination Questions**
+    - “I need to request a subordination”
+        - Ask them to send that to myaccount@figure.com
+- **Payoffs**
+    - Send requests to payoffrequests@figure.com
+    - Reconveyance fees - Transfer to servicing
+    - Specific Questions regarding Payoff Statements (calculations, etc.)
+        - Please direct borrowers to send emails to “Payoffrequests@Figure.com” for payoff requests.
+- **Payments**
+    - Exceptions:
+        - “How are my payments applied?” - [**How is my payment applied for a specific payment?**](https://www.notion.so/How-is-my-payment-applied-for-a-specific-payment-52fabc7df5ae450e82166d826dcbe140?pvs=21)
+    - Past due
+    - Due date change
+    - Refund
+    - Disbursement/payment bounce
+        - Exceptions:
+            - “I have not received my funds” - refer to funding timlines on this call aid
+            - If they state that it has passed the standard timeline, transfer to servicing.
+- **Servicing Statements**
+    - Remind them that they can acccess their statements on their dashboard
+    - If they cannot get logged in or need an explanation of statement, transfer to servicing
+    - REMINDER: they should be logging in via the PL website to access their dashboard if they applied through a PL partner
+    
+- **Tax Forms**
+    - Remind them that 1098s can be found on their dashboard
+    - If they ask about discrepancies, transfer to servicing
+- **Other Account Specific Questions**
+    - **NOT** system/dashboard questions
+    - **NOT** “How do I log in/Log out? I have a line”
+
+## **Borrower Authorization Requirements**
+
+- In order to provide **any line information to a third party** (i.e., Subordination Requests, Payoff Requests, etc.) we need to have a signed and dated borrower authorization (BA) form from that party unless they have been confirmed as a Successor in Interest. If they are a borrower, or another party entitled to such information such as a junior lien holder or property owner, a BA form is not required. Always upload BA Forms in the CSP. Requirements for this form are listed below:
+    - Must be signed/dated by the primary borrower (will accept co-borrower signed auth forms for payoff requests)
+    - Must not be expired - BA Forms ****expire after **1 year** of when they were signed.
+
+## **How is my payment applied for a specific payment?**
+
+- The Home Equity Line is a fully amortizing line. This means that as long as you make your monthly payments on time, the debt will be fully paid off by the end of the set term.
+- Payments are applied to the amounts due as of the date the payment is made in the following order:
+    - Interest (also known as finance charge)
+    - Amounts due in excess of the credit limit
+    - Any fees outstanding
+    - Principal
+    - If you have more than one draw, any principal paid in excess of the payment amount due is applied to the draw with the highest APR.
+- This payment hierarchy is included in the HELOC agreement.
+- The line transaction history is available in the borrower portal. You can view payment breakdown including amounts posted to interest and principal. Also, the monthly statement, also available in the Borrower Portal, shows the detailed breakdown of the most recent payment.
+
+## **How is my interest calculated?**
+
+- The Home Equity Line is a fully amortizing line. This means that as long as you make your monthly payments on time, the debt will be fully paid off by the end of the set term.
+The Home Equity Line calculates interest using the daily simple interest (DSI) method.  Interest accrues daily based on the outstanding principal balance.
+- Payments are applied to the amounts due as of the date the payment is made in the following order:
+• Interest (also known as finance charge)
+• Amounts due in excess of the credit limit
+• Any fees outstanding
+• Principal
+
+## **What is your EIN?**
+
+- Figure’s EIN is 824227262
+
+## **I received a notice of line sale for my HELOC. What does this mean?**
+
+- This will have no impact on your terms of line whatsoever. Figure will maintain servicing rights for the entire term of your line and you will still work with us directly with any questions or concerns that you have.
+
+## **Payment Options and Bank Accounts**
+
+- Figure accepts payments by ACH. Auto pay is by far our most popular option.
+    - A one-time ACH payment option is available through the [Figure.com](http://figure.com/) borrower portal.
+- Can I set up a different bank account for autopay/monthly payments?
+    - Yes, updates to bank account info and autopay preferences can be made through the borrower portal at [Figure.com](http://figure.com/).
+    - ***NOTE: When a new account is added in a user’s dashboard, this account does not need to be PLAID-supported, as they are only prompted for their routing/account number and name on the account.***
+- Can I set my auto pay amount to a higher payment than the regular monthly payment?
+    - Yes. On your dashboard, go to “manage bank accounts”. The option is available to adjust the autopay to any amount equal to or higher than your regular monthly payment.
+- Can I make additional payments in addition to my autopay?
+    - Yes. You can make additional payments. Keep in mind, however, that the regular monthly autopay amount will still pull on the account due date.
+    
+    We accept:
+    
+    - Autopay
+    - Manual Payments (dashboard)
+    - Payment over the Phone
+    - Wires (for Payoff only)
+
+## **Statements and Due Dates**
+
+- Will I receive monthly statements or payment reminders?
+    - The first periodic statements is generated 15 days after initial funding and subsequent statements are generated on the monthly anniversary date of the first statement. The statement is downloaded into the Borrower Portal for easy access.
+    - Whenever a new document becomes available in the Borrower Portal, an email alert will be sent to the borrower’s email address on file.
+    - Payment reminder emails will be sent 2 days prior to the payment due date.
+    - A confirmation email will also be sent after payment posting.
+- When is my due date and can I change it?
+- The standard due date is 30 days after funding is initiated.
+- Yes, you can change your due date if you fall within these constraints.
+    - First payment must be satisfied
+    - Loan must be current to change the payment due date.
+    - New payment date cannot be more than 30 days past the current payment due date.
+    - New payment date cannot be the same calendar day as the current payment due date.
+    - New payment date can only be changed once every two years.
+    - New payment date can only be changed 3 times during the life of the loan.
+    - New payment due date may increase monthly payment when the date is pushed back.
+    - It is required that the new payment date is at least 16 days from now.
+
+## **Why is my account being reported as over the credit limit?**
+
+- We provide monthly reporting in accordance with Consumer Data Industry Association standards for cycle reporting.  The current balance is reported at the end of each cycle and includes the principal balance plus applicable interest or fees that are due during the current reporting period.  The current balance may exceed the original line amount or credit limit depending on payment history.
+
+## **Requesting a Draw**
+
+- How do I request a draw on my line of credit?
+    - Log in to your account at [Figure.com](http://figure.com/). On the main page of your account, click on the menu in the top right. Select “Redraw”. Complete necessary information including amount and deposit account.
+- How will my funds be delivered?
+    - Funds will be sent by ACH to the checking account on record in the Borrower Portal.
+    - An option will also be available to add a new bank account.
+    - Please allow 48-72 hours (not including weekends or holidays) for the funds to deposit to your account.
+    - To ensure you are not charged interest until you receive the funds, the draw is not immediately added or viewable on your account.
+
+## Additional Draw Declined
+
+At the time the borrower requests an additional draw, Figure will request an updated valuation for the subject property. If the results of the updated valuation demonstrate (or if Figure receives notice via another channel) that the value of the borrower’s property has significantly declined below it’s original value determined at origination for purposes of the HELOC, Figure will suspend additional draws from the borrower’s line of credit.
+
+To qualify as a significant decrease in the property value, the initial difference between the credit limit and the available equity (based on the property’s appraised value for purposes of the plan) must be reduced by at least 85%. This means the equity in the home had to have been reduced by at least 85%, not the direct value of the home. Figure will send an Additional Draw Suspension Notice to the borrower no later than three (3) business days from the date of suspension, and the borrower will not be able to take out an additional draw for 60 days.
+
+- The borrower will receive an Additional Draw Suspension Notice (see example below), which will include the most recent AVM amount.
+- The borrower is unable to dispute the updated valuation, but their ability to request additional draws will be automatically reinstated 60 days after the requested date.
+- Future draws are not guaranteed and are subject to further AVMs and value reviews.
+- This possibility is outlined in the HELOC agreement titled: Suspending Additional Draws; Reducing Credit Limit and Available Credit.
+
+## **Can I pay the line to $0 and keep the line open?**
+
+- Yes, you will have access to make draws through the remainder of your draw period in accordance to the terms in your HELOC agreement.
+
+## **When will I receive my 1098 Interest Paid statement?**
+
+- It will be available on your dashboard by 1/31/2023.
+
+## **Can I transfer my property to a trust or LLC after closing?**
+
+- If a borrower comes to us with a question about whether transferring title to the property into a trust will trigger the event of default provision in the HELOC agreement, please advise them to seek legal advice from an attorney.
+- While there are certain trusts that would not trigger a default, Figure does not want to engage in talking through trust provisions with the borrower. The borrower can seek counsel from their attorney as to whether the trust would trigger the default provision.
+- Properties cannot be transferred to an LLC.
+
+## **How can I pay off my line to close my account?**
+
+**Dashboard Procedure**
+
+- You can log into your dashboard and click on “More Options”, then click on “Payoff Quote”, and then select your “Request Date”. Your lender should have given you a “good through” date. This will be the date you put for the “Request Date”. Then click “Submit Request”. Once the quote has generated, you will be able to find this statement is your documents on the dashboard.
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/770ade8f-d723-4565-b933-3c0771a6a8dc/Untitled.png)
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/66981784-c656-4587-b119-734cbb2ba599/Untitled.png)
+
+**Email Procedure**
+
+- If you would like to pay off and close your line in full, a payoff statement can be requested by emailing your request to Payoffrequests@Figure.com. If the request is coming from a third party (another lender or closing firm), then a written authorization needs to be included in the request as well.
+    - NOTE: Written Borrower Auths are valid for 1 year, unless another expiration date is specified in the form.
+- Once the request for a payoff quote is received, please allow 5 business days to process and send.
+- Payoff funds must be received by **WIRE TRANSFER.**
+- Once full payoff funds (including the county-charged release fee) are received, a lien release request will be processed within 5 business days. Once your county has recorded the release, a copy will be forwarded to you.
+- If you are owed a refund, it will be processed within 15 business days after the payoff funds are posted.
+- Wiring Instructions (also on payoff statements) below:
+    
+    ![Image 9-18-24 at 12.53 PM.jpeg](https://prod-files-secure.s3.us-west-2.amazonaws.com/67bd6cb1-e155-4fd3-896d-36a5293baaa7/606eb0ab-d221-4726-8f15-4bc9c445092b/Image_9-18-24_at_12.53_PM.jpeg)
+    
+
+## **How can I pay off my line and keep my account open?**
+
+- You may request your current **outstanding** balance or request a payoff quote. The balance on your dashboard may not include your accrued interest up to today’s date.
+- You may log onto your Figure dashboard to make a manual payment of your **outstanding balance.** Your account will continue to remain open so you may access your additional draw eligibility until your additional draw term expires.
+
+## **I paid off my line, what should I expect next?**
+
+- Within 3 business days after the payoff funds are posted to the account, Figure will submit the request to prepare the reconveyance (lien release). document. Our vendor will prepare and file the document. Once the document is recorded by your county, you will receive a copy of the recorded document.
+- We recommend waiting 45 days after you’ve paid off the HELOC to confirm the reconveyance has been successfully recorded with your county.
+- A final statement will be prepared on your regular statement cycle. This will reflect the payoff posting and $0 balance
+
+## **What is Figure’s Fax Number?**
+
+- 1-775-205-8683
+
+## **What bank does Figure use for payoff wire funds?**
+
+JPMORGAN CHASE BANK, NA
+270 Park Avenue, 43rd Floor
+New York, NY 10017
+
+## **What is a Subordination?**
+
+- An agreement drawn up between two lenders to determine the first lien position. Usually done due to a refinance with a borrower’s first mortgage.
+
+## **I want to refinance my first mortgage.  How can I obtain a subordination agreement from Figure?**
+
+When a borrower or authorized 3rd party requests our requirements for a lien subordination, please request and notify them of the following:
+
+- Line Estimate Disclosure for the new mortgage.
+- New 1003 (Application for new line)
+- If in **AZ, CA, CO, FL, GA, MI, NJ, OH, or WA** - Subordination fee wired to us for $300.
+- The requesting party will prepare the subordination document that Figure will sign.
+
+## **How do I file a credit report dispute?**
+
+- If you believe we have provided inaccurate information to consumer reporting agencies, please complete our [](https://www.datocms-assets.com/33246/1601499070-credit-reporting-dispute-form.pdf)[Credit Reporting Dispute Form](https://www.notion.so/Templates-Forms-46f2fd5de72741f1a2eb3514631e119d?pvs=21) and return to [myaccount@figure.com](mailto:myaccount@figure.com) or mail it to the following address:
+    - Figure Lending LLC
+    - Attn: Credit Disputes
+    - P.O. Box 40534
+    - Reno, NV 84504
+- We will respond to your credit bureau within 30 days. The dispute process may be delayed if the information received is insufficient to identify your account or the information being disputed.
+
+## **I received an email from Figure regarding your new partnership with Valley Strong Credit Union (VSCU). What are the details?**
+
+- If you create a savings account with VSCU (by selecting “Enroll Now” in the email), you will get a $5 pre-loaded to the account and a 0.25% reduction of your existing home equity line APR - All for free with no application required!
+- Must enroll by 8/30/2020 and may take up to 45 days to reflect the rate changes.
+- In order to guarantee the rate reduction, the savings account will need to remain open for 45 days.
+
+## **Delete My Information Requests (DMI)**
+
+- Requests to delete your information can be provided by emailing [HELOC Privacy Email] with your request.
+    
+    [HELOC Privacy Emails](https://www.notion.so/Frequent-Contacts-3e3ae2ef46414bf587251d69112bbd6f?pvs=21)
+    
+- **Please also include the following in your email to us:** Name, Email, Mailing Address, Phone Number, IP Address (if known), and a statement of the action you would like us to take.
+- Once we have completed our review of your request, we will provide a response that outlines the specific information we’re federally required to maintain, or if your information was removed, we will outline this information for you.
+- **For all requests, (CA and non CA residents) refer to the [process doc](https://www.notion.so/DMI-Delete-My-Information-CCPA-c7744f77dbbb445fae3b2211fe5527e3?pvs=21) for procedure**
+- Information should be added to the [tracker](https://docs.google.com/spreadsheets/d/1DOWKB30bTZlpPsBRZSlyqEO-FKMRRw6iIh01YQfsiEU/edit#gid=1092030853)
+- If you have any questions please sync with your direct specialist for additional assistance.
+
+### **Don’t Share My Information (Privacy Opt-Out)**
+
+- While we never sell your information, we do share some information with our affiliates, in line with our Privacy Policy (https://www.figure.com/privacy/) which you have the right to restrict should you desire.
+- If you wish for us to restrict certain information sharing with our affiliates, please review the **Privacy_Notice** document in your User Dashboard to specify how you wish us to do so.
+- There are also 3 methods of submission to best suit your needs: physical mail, email ([privacy@figure.com](mailto:privacy@figure.com)), or simply telling us over the phone at (888)819-6388.
+- **Link to [process doc](https://www.notion.so/DMI-Delete-My-Information-CCPA-c7744f77dbbb445fae3b2211fe5527e3?pvs=21) for procedure**
+
+---
+
+# CCPA
+
+## **CCPA: What is it?**
+
+- CCPA is a privacy law that goes into effect on January 1, 2020 and offers certain privacy rights to California residents regarding the collection and sharing of their personal data.
+
+## **CCPA: My rights under CCPA?**
+
+- If you are a California resident, you are allowed to request the types of personal information that we collect and also that we delete any of that information that is not covered under a qualified exception.  If you would like to make a request, we will review your circumstances and provide a response within 45 days with a description of the action taken.
+
+## **CCPA: How can I submit a request?**
+
+- Requests can be submitted by phone at 888-819-6388 or at [privacy@figure.com](mailto:privacy@figure.com).  Please include your Name, Email, Mailing Address, Phone Number, IP Address (if known), and statement of the action you would like us to take.  This could be for general information on the types of categories collected, deleting information collected, or both.
+
+## **CCPA: What information do you collect about me?**
+
+- The most common information is collected during the application process or in the servicing of your line.  For complete details, please review our Privacy Policy at [www.figure.com/privacy](http://www.figure.com/privacy).  Specific information will be provided in response to your request.
+
+## **CCPA: Delete ALL of my personal information.**
+
+- Once we have completed our review of your request, we will provide a response that outlines the specific categories of information collected and any categories we are allowed to delete under California or federal law.
+
+---
+
+# **Provenance**
+
+## **What is Provenance?**
+
+- Provenance is a distributed ledger technology - or Blockchain platform - built in house at Figure. It was created to transform the financial services industry by bringing speed, efficiency and savings to consumers and institutions.
+- Provenance is the leading production blockchain platform for financial services - we have over 150 global members and we are pursuing over $120 billion in annual total addressable market opportunities.
+- Figure built, spun out, and owns 72% of the token stock (Hash) in Provenance
+- Figure leverages Provenance to create advantages in its own business lines while using its position as first mover to de-risk the blockchain, drive greater industry adoption and deliver blockchain SaaS/smart contract solutions to the financial services industry
+
+## **What is Hash & how do I buy some?**
+
+- Hash is the digital security token native to Provenance and represents a share of the fees paid to transact on the blockchain.
+- Hash can be bought and sold by any member of Provenance that meets certain financial requirements.
+- If you’re an investor and are interested in investing in Hash, please register at [Provenance.io](http://provenance.io/). From there, a member of our Provenance team will reach out for more information. Please note that currently, Hash investment is limited to accredited investors.
+
+## **How do I get involved in your line marketplace (bidding, line sales, etc)?**
+
+- If you are a financial institution looking to participate in our line sales, BWIC/OWIC, or have general questions about the Provenance Marketplace, please email [info@provenance.io](mailto:info@provenance.io)
+- BWIC: bids-wanted-in-competition
+
+OWIC: offers-wanted-in-competition
+
+## **Who do I contact if I have additional questions?**
+
+- On the Provenance website ([Provenance.io](http://provenance.io/)) you can read our whitepapers, access FAQs, and watch our marketplace tutorials.
+- For more detailed information, and for a copy of our most recent Provenance Update, please email [info@provenance.io](mailto:info@provenance.io)
+
+---
+
+# **Servicing - Past Due Customers**
+
+## Past due account
+
+- Check the account notes to ensure you have the most recent information.
+
+## Account less than 15 days past due
+
+- If borrower promises to pay within the next 2  weeks, OK to accept arrangement and notate account.
+- If borrower indicates payment will be delayed beyond 2 weeks, escalate to Servicing specialist.
+
+## Account more than 15 days past due but less than 30
+
+- Ask and notate the reason for delinquency (RFD).
+- If RFD has been previously disclosed, you don’t have to ask again.
+- If borrower promises to pay within the same week, OK to accept arrangement and notate account.
+
+- If prior promise to pay has been broken, escalate to Servicing specialist.
+- If borrower indicates payment will be delayed beyond the end of current week, escalate to Servicing specialist.
+
+## Accounts more than 30 days past due
+
+- If no promise to pay by end of current week (or current month, whichever is sooner), escalate to Servicing specialist.
+
+## Accounts transferred to SLS
+
+- Accounts that have been transferred to Specialized Line Servicer (SLS) will show “Transferred” as the account status and functionality will be limited on the borrower dashboard.
+- Any transferred borrower that calls in to Figure should be directed to reach out to SLS at 800-315-4757 or [InvestorRelations@sls.net](mailto:InvestorRelations@sls.net).
+    - Note - borrowers can still make payments to Figure within 60 days after transfer, however, we should direct them to call SLS to make their payments as we will have to send their payment to SLS regardless.
+
+# **Servicing - Forbearance**
+
+## What is Forbearance?
+
+- If you’re experiencing income loss or financial hardship you may be eligible for payment assistance.
+
+## How does your forbearance program work?
+
+- Figure offers payment forbearance in 3 mo. increments for a maximum of 12 months over the life of the line, for those who are eligible. For COVID-related hardship the maximum is 18 months. If approved for forbearance, you will not be required to make your monthly payments for 3 months, but interest will continue to accrue during that time.
+    - For borrowers in MA and MD, amounts that accrue in excess of would have accrued had the Deferred Payments been made will be credited to the line at the end of the forbearance period.
+- If you would like to continue making payments during the forbearance period, you are free to do so at your option.
+- At the end of the 3-month period, the line will be re-amortized across the remaining term, keeping the same maturity date. This means the total amount due at that time will be spread out evenly across the remaining number of months left on the line, which may result in your monthly payment amount going up. Interest will not be calculated on the interest that accrued during the forbearance period.
+- The next payment will not be due until the regularly scheduled due date after the 3 month forbearance period has ended.
+- You will not be able to make any additional draws from the account during the forbearance period and until 3 consecutive payments have been made after the forbearance period ends.
+
+### **What is required to get approved for forbearance?**
+
+We require for you to complete a Loan Assistance Agreement (LAA). The form must be signed, dated and returned back to [myaccount@figure.com](mailto:myaccount@figure.com). Depending on the hardship you select you may be required to send us documentation as well. The form will include exactly what we need to review. Would you like for us to email you the form via Docusign?
+
+<aside>
+💡
+
+If borrowers who reside in New Jersey state that they have a Certification of Eligibility for Forbearance:
+
+- A Loan Application is not required to be completed by the borrower
+- Ask the borrower to email their certificate to myaccount@figure.com
+</aside>
+
+## How will forbearance impact my credit?
+
+- We freeze your credit reporting status to reflect the same status it was in when you entered into your forbearance agreement. Because your account was brought current at the time you entered in your forbearance agreement, we will continue to report as such to the credit agencies during the forbearance period.
+
+## How does this impact my monthly payment?
+
+- At the end of the 3-month period, the line will be re-amortized across the remaining term, keeping the same maturity date. This means the total amount due at that time will be spread out evenly across the remaining number of months left on the line. Interest will not be calculated on the interest that accrued during the forbearance period.
+- It’s important to understand that the re-amortization of the amounts due after the forbearance period ends could cause your monthly payment to increase.
+
+# **Servicing - Insurance**
+
+## Why do you require proof of insurance?
+
+- Figure must confirm that your property is protected by Hazard and/or Flood insurance(if the property is in a flood zone).
+- For properties in a flood zone, proof of flood insurance is required regardless of lien position.
+
+## What do I need to send you as my proof of insurance?
+
+- We are looking for a current declaration page of your current insurance policy, with the effective date being, before or on, your line board date. It should show your name, insured property address, insurance agent’s contact information, policy number, policy coverage amount, and expiration date.
+
+## How long do I have to send you my proof of insurance?
+
+- We need your proof of insurance sent to us within 5 business days after your funding date. If proof of insurance is not received by then, we will begin the forced place insurance process.
+
+## How much coverage do I need on my policy?
+
+- Your coverage amount needs to be greater than your total credit limit with us. To discuss the details of your insurance coverage, you will need to speak with a member of our insurance team. I can provide the phone number to you. Phone #: 1-800-653-8812. Would you like for me to transfer you?
+
+## I received a letter from Allied Insurance, what is this?
+
+- Since it has been more than 5 business days after funding and we have not received any eligible proof of insurance docs, we have begun the force placed insurance process. If you have existing insurance on the property, please forward us the declaration page in order to cancel the forced place insurance process.
+
+### **Allied Contact Information**
+
+Phone #: 1-800-653-8812
+Email Address:  [docsend@fmq.alliedsolutions.net](mailto:todocsend@fmq.alliedsolutions.net)
+
+## Insurance Agent: We are returning a call from Figure in regards to *applicant name*, how can we assist you?
+
+- We need to add ourselves as a mortgagee onto their policy. The loss payee information is…
+    - Figure Lending LLC
+    ISAOA/ATIMA
+    - P.O. BOX 2095
+    - CARMEL, IN 46082
+- Once added, please email a copy to [docsend@fmq.alliedsolutions.net](mailto:todocsend@fmq.alliedsolutions.net).
+
+## I filed an insurance claim and need to have the claim check endorsed.
+
+- When Figure is notified of a hazard or flood claim, the borrower needs to forward the adjuster worksheet along with the check for endorsement to:
+    - Figure Lending LLC
+    - ℅ Servicing
+    
+    - 100 W Liberty Street Suite 600
+    
+    - Reno, NV 89501
+- Depending on the size of the loss, the UPB of the line, and value of property, funds may be held and incrementally disbursed to ensure repairs are completed.
+- The following matrix will be followed in regards to endorsing the check on borrowers that are current on their payments to Figure: (If a borrower is past due with Figure, they still need to endorse the check and send in and we will review on a case-by-case basis).
+- Check Amount
+- Action
+- $5,000 or less
+    - Endorse and return to borrower
+- $5,000 - $19,999
+    - Borrower must endorse before sending
+    - Figure will cut 2 checks.  One to begin repairs and one upon completion.  An inspection will be ordered prior to disbursement of second check to confirm repairs completed.
+- $20,0000+
+    - Borrower must endorse before sending
+    - Figure will cut 3 checks for 1/3 the full claim amount each.  One to begin the repairs, second check half way through with an inspection before disbursement, and final check after completion with a final inspection before disbursement.
+    
+    # **SCRA (Service-Members Civil Relief Act)**
+    
+    ## What if the line is consummated before the start of active duty?
+    
+    - If the line is consummated prior to the start of active military service, interest rates must be reduced to a maximum of 6% percent for the period of active duty and for 12 months after the end of active duty.  The interest rate limitation will apply during the individual’s term of active service, beginning on the date active military service begins (or the date of the orders for reservists) and continuing until 12 months after the date active military service ends, unless otherwise directed by a court.
+    - If the line is consummated prior to the start of active military service, servicemembers retain the right to have any foreclosure action stayed for the period of active duty and for 12 months after the end of active military duty.
+    
+    ## Am I eligible for the SCRA?
+    
+    - The SCRA benefit only applies to lines originated prior to going to an active duty status.
+    - In order to be eligible for the SCRA, Figure must confirm 1) the line was originated prior to your active duty status and 2) you are now active duty via activation orders.
+    - Please provide neryour activation orders by emailing them to [MyAccount@Figure.com](mailto:MyAccount@Figure.com). (Most DoD members will be provided verification of deployment orders in excess of 90 days. This will state the situation, timeline, and point of contact.)
+    
+    ## When will I receive my acknowledgment letter?
+    
+    - Figure will send your acknowledgement letter within 30-days of confirming qualification for SCRA protections. The letter will document the date of activation as well as the expected date of the end of activation. It will also confirm that the maximum 6% interest rate will commence with the date of activation and will continue for 12 months after the date active military service ends. A copy of this letter will be retained by Figure for 7 years after final payment of the line.
+    
+    ## When will my SCRA benefits end?
+    
+    - 12-Months after your active duty service ends. You will receive a confirmation letter no less than 30 days prior to the payment date change at the end of the 12-month period detailing the new payment amount and effective date.
+    
+    ## **NAV_NO_PROPERTY_VALUE**
+    
+    - We were unable to successfully complete your secondary property valuation as requested. This could be due to an inability to access the property or inadequate information available to us. As a result, are unable to proceed with your application at this time.
+
+---

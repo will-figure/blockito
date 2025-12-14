@@ -169,3 +169,11 @@ in it's own terminal pane or window.
 `one start -w csp` from the frontend monorepo.
 
 Then navigate to `http://localhost:3000/csp` in your browser.
+
+## TODOs
+
+* live data from notion
+* all nested information in notion
+* better chunkking strategy
+* endpoints for adding embeddings as we go
+* best hosting for llama server? this is a jake question/conversation

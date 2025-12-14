@@ -24,8 +24,10 @@ pub struct Embedding {
 impl Embedding {
     pub async fn new() -> anyhow::Result<Self> {
         let mut vector_db = vec![];
-        let file = fs::read_to_string("cat-facts.txt")
-            .expect("something bad happened while loading the data");
+        // TODO: make the file path configurable, or just use endpoints to populate here
+        // probably shouldn't be static
+        let file =
+            fs::read_to_string("test.txt").expect("something bad happened while loading the data");
 
         for line in file.lines() {
             let vector = Self::embedding(line).await?;
