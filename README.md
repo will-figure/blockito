@@ -1,11 +1,14 @@
 # Blockito (little blocky)
 
-This project is a proof of concept for a rag system
+This project is (as of today) a proof of concept for a rag system
 on top of our customer service training data.
 
-Currently, `cat-facts.txt` is our fake training data and this is basically a rust
-version of [Hugging Face's basic RAG](https://huggingface.co/blog/ngxson/make-your-own-rag),
-but I ripped out/replaced all the stuff I didn't like (`python`/`ollama`).
+Currently, `cat-facts.txt` is our fake training data
+(though `test.txt` has some real data one can try out if interested)
+and this is basically a rust version of [Hugging Face's basic RAG](https://huggingface.co/blog/ngxson/make-your-own-rag),
+but we ripped out/replaced all the stuff we (I) didn't like (`python`/`ollama`).
+
+We're also using the "Royal We" for some reason.
 
 ## Getting Started
 
@@ -13,16 +16,17 @@ Install [`rust` and `cargo`](https://rust-lang.org/learn/get-started/).
 
 We are currently fairly tightly coupled with `frontend-csp` in the frontend
 monorepo, (though not completely, just for this POC).
+Technically, the server is standalone, but this gives us a basic UI.
 
 We recommend cloning that project and following the
 installation instructions to get that up and running.
 
 The main branch we've been using for
-[that project](https://github.com/FigureTechnologies/frontend) is
-`wlabranche/no-ticket/robot`. It's currently a bit behind `main`,
+[that project](https://github.com/FigureTechnologies/frontend) is `wlabranche/no-ticket/robot`.
+It's currently a bit behind `main`,
 but nothing much to worry about there.
 
-To run the project, you have two choices:
+To run this project, you have two choices:
 
 `cargo run` from inside the root directory.
 
@@ -44,12 +48,13 @@ this is because we need to get the LLM server up and running.
 In a different terminal window or pane, we will need to install and run our LLM server.
 
 There are a lot of options here, you can use whatever you'd like,
-but I'd recommend (and what I will be showing here) is
+but we'd recommend (and what we will be showing here) is
 [`llama.cpp`](https://github.com/ggml-org/llama.cpp) and [`llama-swap`](https://github.com/mostlygeek/llama-swap).
 
-These are light weird and lot of other tooling is just built on top of these.
+These are lightweight and lot of other tooling is just built on top of these.
 
-I'm also assuming you're using a mac, so install with `brew`:
+We're also assuming you're using a mac, so install with `brew`
+(though we're becoming increasingly annoyed with this tool):
 
 ```
 brew install llama.cpp
@@ -71,10 +76,10 @@ but can be used with other things as well, but don't stress to much there.
 
 It's set up is very straightforward and consists of just a config file.
 
-I store mine at `~/.config/llama-swap/config.yaml`.
+We store ours at `~/.config/llama-swap/config.yaml`.
 
 Once all that is installed,
-you can just copy my current config file and it should work fine.
+you can just copy our current config file and it should work fine.
 
 ```
 models:
@@ -99,7 +104,7 @@ groups:
 ```
 
 If you're curious about what is happening here,
-the `models` group just aliases our server commnads to start when needed.
+the `models` group just aliases our server commands to start when needed.
 
 Here we're using two models, one aliased as `blockito-language` and
 the other as `blockito-embedding` and set the `llama-server` command
@@ -114,7 +119,7 @@ You can find other options on the `llama.cpp` GitHub page.
 environment variable when starting the server.
 
 `--embedding` tells `llama-server` to run in embedding mode,
-which is what we want for the embedding model (I'm still learning more about this).
+which is what we want for the embedding model (We're still learning more about this).
 
 We then have the `groups` section where we can
 define groups of models to by combined on the same server.
@@ -124,11 +129,10 @@ which is what our `rust` server will connect to.
 
 `swap` basically means if the two servers will run
 independently or one at a time, here we set it to `false` so both can run.
-I need to learn a bit more about this.
 
 `exclusive` means defines if we have more than one group, if they can interact,
 we don't need that, `exclusive: true` is the default,
-but I'm learning so I like it explicit.
+but we're learning so we like it explicit.
 
 Then, `members` is just a list of the models we defined earlier
 that will be part of this group and matches the models we defined above.
@@ -140,16 +144,16 @@ llama-swap --config ~/.config/llama-swap/config.yaml --listen localhost:8765
 ```
 
 This will start the server on port `8765` on your local machine.
-I have this aliased in my shell to `blockito-server`.
+We have this aliased in our shell to `blockito-server`.
 
-Eventually, we will wan that port
-(and the port in the rust server to be configurable)
+Eventually, we will want that port
+(and the port in the `rust`` server to be configurable)
 and we'll also want to do a better job of defining
 and managing which models we interact with.
 
 `./src/consts.rs` is probably doing a bit too much right now.
 
-Once we have the llama server running, we can return to our rust server.
+Once we have the `llama` server running, we can return to our `rust` server.
 
 If it's still running, just stop it and restart it with `bacon run` again.
 
@@ -171,6 +175,8 @@ in it's own terminal pane or window.
 `one start -w csp` from the frontend monorepo.
 
 Then navigate to `http://localhost:3000/csp` in your browser.
+Once there, look to the bottom left for the robot panel,
+open that, and start asking whatever you want about cats.
 
 ## TODOs
 
