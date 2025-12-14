@@ -26,8 +26,8 @@ impl Embedding {
         let mut vector_db = vec![];
         // TODO: make the file path configurable, or just use endpoints to populate here
         // probably shouldn't be static
-        let file =
-            fs::read_to_string("test.txt").expect("something bad happened while loading the data");
+        let file = fs::read_to_string("cat-facts.txt")
+            .expect("something bad happened while loading the data");
 
         for line in file.lines() {
             let vector = Self::embedding(line).await?;

@@ -24,6 +24,12 @@ async fn fallback(uri: Uri) -> impl IntoResponse {
     (StatusCode::NOT_FOUND, format!("No route for {uri}!!1"))
 }
 
+// ideal pattern (rambling 12/13/2025)
+// user can create new embedding groups via endpoint
+// those embedding groups are sharable and/or public
+// users can select which embedding groups to use when making requests
+// nothing happens on start up
+
 // TODO: better logging
 // TODO: maybe create an encapsulated llama client that handles the language model requests
 #[tokio::main]
