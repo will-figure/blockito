@@ -76,7 +76,8 @@ but can be used with other things as well, but don't stress too much there.
 
 It's set up is very straightforward and consists of just a config file.
 
-We store ours at `~/.config/llama-swap/config.yaml`.
+We store ours at `~/.config/llama-swap/config.yaml`,
+but we've included on in this project too (`example-swap-config.yaml`).
 
 Once all that is installed,
 you can just copy our current config file and it should work fine.
@@ -168,7 +169,11 @@ The chat window will now be set up to talk to blockito about cats.
 So, in short, once everything is set up:
 
 `llama-swap --config ~/.config/llama-swap/config.yaml --listen localhost:8765`
-in it's own terminal pane or window.
+in it's own terminal pane or window
+(if you just want to use the one in this project,
+change the path after config to point to `example-swap-config.yaml`,
+I don't know what directory you're running this from
+so I can't tell you exactly what that will look like for you).
 
 `bacon run` from rust project.
 

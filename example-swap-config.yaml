@@ -1,0 +1,19 @@
+models:
+  "blockito-language":
+    cmd: |
+      llama-server
+      -hf unsloth/Qwen3-0.6B-GGUF
+      --port ${PORT}
+  "blockito-embedding":
+    cmd: |
+      llama-server
+      -hf CompendiumLabs/bge-base-en-v1.5-gguf
+      --embedding
+      --port ${PORT}
+groups:
+  "blockito":
+    swap: false
+    exclusive: true
+    members:
+      - "blockito-language"
+      - "blockito-embedding"
