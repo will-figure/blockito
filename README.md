@@ -30,7 +30,7 @@ To run this project, you have two choices:
 
 `cargo run` from inside the root directory.
 
-This should everything for you, but this will not
+This should handle everything for you, but this will not
 automatically restart the server on change.
 
 To have that functionality, you will want to install
@@ -51,7 +51,7 @@ There are a lot of options here, you can use whatever you'd like,
 but we'd recommend (and what we will be showing here) is
 [`llama.cpp`](https://github.com/ggml-org/llama.cpp) and [`llama-swap`](https://github.com/mostlygeek/llama-swap).
 
-These are lightweight and lot of other tooling is just built on top of these.
+These are lightweight and lot of other tooling is just built on top of them.
 
 We're also assuming you're using a mac, so install with `brew`
 (though we're becoming increasingly annoyed with this tool):
@@ -72,7 +72,7 @@ brew install llama-swap
 ```
 
 `llama-swap`, is a basic server that theoretically wraps `llama.cpp`,
-but can be used with other things as well, but don't stress to much there.
+but can be used with other things as well, but don't stress too much there.
 
 It's set up is very straightforward and consists of just a config file.
 
@@ -147,7 +147,7 @@ This will start the server on port `8765` on your local machine.
 We have this aliased in our shell to `blockito-server`.
 
 Eventually, we will want that port
-(and the port in the `rust`` server to be configurable)
+(and the port in the `rust` server to be configurable)
 and we'll also want to do a better job of defining
 and managing which models we interact with.
 
